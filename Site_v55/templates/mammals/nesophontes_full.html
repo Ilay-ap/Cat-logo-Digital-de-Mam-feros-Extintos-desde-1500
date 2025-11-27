@@ -1,0 +1,549 @@
+{% extends "detail_scientific.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block extra_css %}
+{{ block.super }}
+<style>
+.topic-image {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.topic-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.topic-image img:hover {
+    transform: scale(1.02);
+}
+
+.image-caption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+.dossier-content {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.dossier-content h2 {
+    color: #1e3c72;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid #2a5298;
+}
+
+.dossier-content h3 {
+    color: #2a5298;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.dossier-content p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: justify;
+}
+
+.dossier-content ul, .dossier-content ol {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.dossier-content blockquote {
+    border-left: 4px solid #2a5298;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #555;
+    background: #f9fafb;
+    padding: 1rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.dossier-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.dossier-content table th,
+.dossier-content table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+}
+
+.dossier-content table th {
+    background: #f5f7fa;
+    font-weight: 600;
+    color: #1e3c72;
+}
+
+/* Modal para imagens */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.image-modal img {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-modal .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Mapa de distribuição */
+#distribution-map-container {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 8px;
+}
+
+#distribution-map {
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Seção de comentários integrada */
+.comments-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f9fafb;
+    border-radius: 12px;
+}
+
+.comments-section h3 {
+    color: #1e3c72;
+    margin-bottom: 1.5rem;
+}
+
+.comment-form {
+    margin-bottom: 2rem;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.comment-form textarea:focus {
+    outline: none;
+    border-color: #2a5298;
+}
+
+.comment-form button {
+    margin-top: 1rem;
+}
+
+.comment {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.comment-author {
+    font-weight: 600;
+    color: #1e3c72;
+}
+
+.comment-date {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.comment-content {
+    color: #333;
+    line-height: 1.6;
+}
+
+.action-buttons {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-favorite {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #2a5298;
+    background: white;
+    color: #2a5298;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-favorite:hover {
+    background: #2a5298;
+    color: white;
+}
+
+.btn-favorite.active {
+    background: #2a5298;
+    color: white;
+}
+</style>
+{% endblock %}
+
+{% block dossier_content %}
+<div class="dossier-header">
+    <h1>Nesofonte de Atalaye</h1>
+    <div class="scientific-name">Nesophontes hypomicrus Miller, 1929</div>
+    <div class="status-badge extinct">EXTINTO</div>
+</div>
+
+<nav class="dossier-nav">
+    <ul>
+        <li><a href="#introducao">Introdução</a></li>
+        <li><a href="#descoberta">Descoberta</a></li>
+        <li><a href="#taxonomia">Taxonomia</a></li>
+        <li><a href="#morfologia">Morfologia</a></li>
+        <li><a href="#filogenia">Filogenia</a></li>
+        <li><a href="#ecologia">Ecologia</a></li>
+        <li><a href="#distribuicao">Distribuição</a></li>
+        <li><a href="#extincao">Extinção</a></li>
+        <li><a href="#bibliografia">Bibliografia</a></li>
+        <li><a href="#comentarios">Comentários</a></li>
+    </ul>
+</nav>
+
+<article class="dossier-content">
+
+<h2 id="introducao">1. INTRODUÇÃO</h2>
+<div class="topic-image">
+    <img src="{% static 'images/nesophontes_hypomicrus/Reconstrucao_artistica.jpeg' %}" 
+         alt="Reconstrução artística do Nesophontes hypomicrus" 
+         onclick="openImageModal(this.src)">
+    <p class="image-caption">Reconstrução artística do Nesofonte de Atalaye em seu habitat natural</p>
+</div>
+
+<p><em>Nesophontes hypomicrus</em>, conhecido como o Nesofonte de Atalaye, foi uma pequena espécie de mamífero insetívoro endêmico da ilha de Hispaniola (Haiti e República Dominicana). Pertencente à família extinta Nesophontidae, este animal representa uma linhagem única de mamíferos caribenhos que divergiu de outros insetívoros há mais de 70 milhões de anos. A espécie foi descrita cientificamente apenas em 1929 por Gerrit S. Miller, Jr., com base em restos fósseis encontrados em cavernas no Haiti, muito depois de sua extinção.</p>
+
+<p>Apesar de ter sobrevivido por milênios à presença humana ameríndia, <em>N. hypomicrus</em>, juntamente com o resto de seu gênero, foi levado à extinção rapidamente após a chegada dos europeus no final do século XV. A introdução de espécies invasoras, principalmente ratos (<em>Rattus</em> spp.), é considerada a principal causa de seu desaparecimento, um padrão trágico que se repetiu em todo o Caribe, resultando em uma das mais severas ondas de extinção de mamíferos do Holoceno.</p>
+
+<p>Este dossiê consolida o conhecimento científico atual sobre <em>N. hypomicrus</em>, abrangendo sua taxonomia, morfologia, ecologia, comportamento e as circunstâncias de sua extinção, com base em publicações científicas, bases de dados taxonômicas e coleções de museus.</p>
+
+<h2 id="descoberta">2. HISTÓRICO DA DESCOBERTA</h2>
+<div class="topic-image">
+    <img src="{% static 'images/nesophontes_hypomicrus/Holotipo_USNM_PAL_367223.jpg' %}" 
+         alt="Holótipo USNM PAL 367223" 
+         onclick="openImageModal(this.src)">
+    <p class="image-caption">Holótipo USNM 253077 - Crânio usado por Miller na descrição original (1929)</p>
+</div>
+
+<h3>2.1. As Expedições ao Haiti</h3>
+<p>A descoberta de <em>Nesophontes hypomicrus</em> está intrinsecamente ligada a uma série de expedições científicas ao Haiti no início do século XX, focadas na exploração de depósitos de ossos em cavernas. O gênero <em>Nesophontes</em> ainda não havia sido registrado na ilha de Hispaniola até então.</p>
+
+<ul>
+<li><strong>1925 (Gerrit S. Miller, Jr.):</strong> Durante uma expedição de quatro semanas na plantação de l'Atalaye, perto de St. Michel, Haiti, o curador da Divisão de Mamíferos do Museu Nacional dos EUA, Gerrit S. Miller, Jr., coletou um vasto material de uma caverna profunda. Este material continha os restos de várias espécies de mamíferos extintos, incluindo os espécimes que se tornariam a série-tipo de <em>N. hypomicrus</em>.</li>
+<li><strong>1927-1928 (Arthur J. Poole):</strong> Uma expedição subsequente, financiada pelo Dr. W. L. Abbott, foi liderada por Arthur J. Poole. Esta expedição provavelmente esgotou os depósitos ósseos mais acessíveis das cavernas, mas o material coletado por Miller em 1925 permaneceu a base para a descrição de novas espécies.</li>
+</ul>
+
+<h3>2.2. A Descrição Original (Miller, 1929)</h3>
+<p>Em 30 de março de 1929, Gerrit S. Miller, Jr. publicou o artigo <strong>"A second collection of Mammals from caves near St. Michel, Haiti"</strong> nas <em>Smithsonian Miscellaneous Collections</em>. Neste trabalho, ele descreveu formalmente três novas espécies de <em>Nesophontes</em> para a ciência, incluindo <em>Nesophontes hypomicrus</em>.</p>
+
+<blockquote>
+<p>"Insetívoros do gênero <em>Nesophontes</em> são abundantemente representados nas cavernas haitianas. Eles não foram previamente registrados da ilha de Hispaniola. Na camada superficial dos pisos das cavernas, os ossos destes animais ocorrem em material não perturbado junto com restos de <em>Epimys rattus</em> e <em>Mus musculus</em>. Esta associação é tão íntima que parece não haver razão para duvidar da ocorrência simultânea dos insetívoros e dos roedores introduzidos."</p>
+</blockquote>
+
+<p>Miller baseou sua descrição em um crânio quase perfeito (USNM 253077) como o holótipo, distinguindo a espécie por seu tamanho consistentemente menor em comparação com as outras espécies haitianas que ele descreveu (<em>N. paramicrus</em> e <em>N. zamicrus</em>).</p>
+
+<h2 id="taxonomia">3. TAXONOMIA E CLASSIFICAÇÃO</h2>
+
+<table>
+<thead>
+<tr>
+<th>Nível Taxonômico</th>
+<th>Classificação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reino</strong></td>
+<td>Animalia</td>
+</tr>
+<tr>
+<td><strong>Filo</strong></td>
+<td>Chordata</td>
+</tr>
+<tr>
+<td><strong>Classe</strong></td>
+<td>Mammalia</td>
+</tr>
+<tr>
+<td><strong>Ordem</strong></td>
+<td>Eulipotyphla</td>
+</tr>
+<tr>
+<td><strong>Família</strong></td>
+<td>†Nesophontidae</td>
+</tr>
+<tr>
+<td><strong>Gênero</strong></td>
+<td>†<em>Nesophontes</em></td>
+</tr>
+<tr>
+<td><strong>Espécie</strong></td>
+<td>†<em>N. hypomicrus</em></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Nome binomial:</strong> <em>Nesophontes hypomicrus</em> Miller, 1929</p>
+<p><strong>Etimologia:</strong> O nome genérico <em>Nesophontes</em> deriva do grego <em>nesos</em> (ilha) + <em>phontes</em> (assassino), referindo-se à sua natureza insular e predatória. O epíteto específico <em>hypomicrus</em> significa "muito pequeno", destacando seu tamanho reduzido em relação a outras espécies do gênero.</p>
+
+<h2 id="morfologia">4. MORFOLOGIA</h2>
+
+<h3>4.1. Características Cranianas</h3>
+<p>O crânio de <em>N. hypomicrus</em> é notavelmente pequeno, com comprimento total variando entre 28-32 mm. Apresenta um rostro alongado e estreito, característico de insetívoros, com órbitas pequenas indicando hábitos noturnos ou crepusculares. A caixa craniana é relativamente grande em proporção ao focinho, sugerindo capacidades sensoriais desenvolvidas.</p>
+
+<h3>4.2. Dentição</h3>
+<p>A fórmula dentária de <em>Nesophontes</em> é típica de insetívoros: incisivos afiados, caninos pequenos e molares com cúspides pontiagudas adaptadas para perfurar e triturar exoesqueletos de insetos. Os dentes apresentam esmalte bem desenvolvido e desgaste característico de uma dieta insetívora.</p>
+
+<h3>4.3. Esqueleto Pós-craniano</h3>
+<p>Embora o material pós-craniano seja mais fragmentário, os ossos longos sugerem um animal de pequeno porte, com massa corporal estimada entre 20-40 gramas. Os membros eram proporcionalmente curtos, indicando locomoção terrestre e possivelmente hábitos fossórios.</p>
+
+<h2 id="filogenia">5. FILOGENIA E RELAÇÕES EVOLUTIVAS</h2>
+
+<p>Estudos moleculares e morfológicos indicam que a família Nesophontidae representa uma linhagem antiga de mamíferos placentários que se separou de outros eulipotíflos no Cretáceo Superior, há aproximadamente 70-76 milhões de anos. Esta divergência precoce fez dos nesofontes verdadeiros "fósseis vivos" até sua extinção recente.</p>
+
+<p>A família Nesophontidae é endêmica das Grandes Antilhas, com espécies registradas em Cuba, Hispaniola, Porto Rico e possivelmente nas Ilhas Caimão. A radiação do gênero <em>Nesophontes</em> provavelmente ocorreu através de eventos de dispersão sobre água entre as ilhas caribenhas durante o Cenozoico.</p>
+
+<h2 id="ecologia">6. ECOLOGIA E COMPORTAMENTO</h2>
+
+<h3>6.1. Habitat</h3>
+<p>Com base em associações faunísticas e contexto geológico dos fósseis, <em>N. hypomicrus</em> habitava ambientes florestais úmidos e áreas de vegetação densa nas terras baixas e médias de Hispaniola. A presença de seus restos em depósitos de cavernas sugere que esses locais eram utilizados como abrigos ou que os animais eram presas de predadores que utilizavam as cavernas.</p>
+
+<h3>6.2. Dieta</h3>
+<p>A morfologia dentária e craniana indica uma dieta predominantemente insetívora, provavelmente incluindo besouros, formigas, cupins, larvas e outros invertebrados de solo. A estrutura do focinho sugere capacidade para forragear em serapilheira e possivelmente escavar em busca de presas subterrâneas.</p>
+
+<h3>6.3. Comportamento</h3>
+<p>Embora não existam observações diretas, inferências baseadas em morfologia sugerem hábitos noturnos ou crepusculares, com atividade de forrageamento no solo da floresta. O tamanho pequeno e a morfologia indicam um animal solitário com territórios de forrageamento relativamente pequenos.</p>
+
+<h2 id="distribuicao">7. DISTRIBUIÇÃO GEOGRÁFICA</h2>
+
+<p><em>Nesophontes hypomicrus</em> era endêmico da ilha de Hispaniola, com registros fósseis concentrados na região norte do Haiti. Os principais sítios de descoberta incluem:</p>
+
+<ul>
+<li><strong>Caverna Atalaye</strong> - St. Michel (Haiti) - Localidade-tipo</li>
+<li><strong>Trouing Jean Paul</strong> (Haiti)</li>
+<li><strong>Ilha Gonâve</strong> - Anse-à-Galets (Haiti)</li>
+</ul>
+
+<!-- Mapa de Distribuição -->
+<div id="distribution-map-container">
+    <h3>🗺️ Mapa de Distribuição Histórica</h3>
+    <div id="distribution-map"></div>
+</div>
+
+<p>A distribuição conhecida pode estar subestimada devido à amostragem limitada de sítios paleontológicos em Hispaniola. É provável que a espécie tivesse uma distribuição mais ampla na ilha antes da chegada dos europeus.</p>
+
+<h2 id="extincao">8. EXTINÇÃO</h2>
+
+<h3>8.1. Cronologia da Extinção</h3>
+<p>A extinção de <em>N. hypomicrus</em> ocorreu no período pós-colombiano, provavelmente entre 1500-1600 d.C. A associação íntima de seus restos com ossos de ratos introduzidos (<em>Rattus rattus</em> e <em>Mus musculus</em>) nas camadas superiores de depósitos de cavernas fornece evidência clara de que a espécie sobreviveu até após a chegada dos europeus em 1492.</p>
+
+<h3>8.2. Causas da Extinção</h3>
+<p>As principais causas da extinção incluem:</p>
+
+<ul>
+<li><strong>Introdução de espécies invasoras:</strong> Ratos europeus competiram por recursos alimentares e provavelmente predaram ninhos e filhotes.</li>
+<li><strong>Destruição de habitat:</strong> Desmatamento para agricultura e assentamentos humanos reduziu drasticamente o habitat disponível.</li>
+<li><strong>Introdução de predadores:</strong> Gatos, cães e mangustos introduzidos representaram novos predadores para os quais a espécie não tinha defesas evolutivas.</li>
+<li><strong>Doenças:</strong> Patógenos introduzidos por mamíferos invasores podem ter contribuído para o declínio populacional.</li>
+</ul>
+
+<h3>8.3. Contexto Regional</h3>
+<p>A extinção de <em>N. hypomicrus</em> faz parte de uma onda de extinções em massa de mamíferos caribenhos no período pós-colombiano. Todas as espécies de <em>Nesophontes</em> (8 espécies descritas) foram extintas neste período, representando a perda completa de uma família única de mamíferos.</p>
+
+<h2 id="bibliografia">9. REFERÊNCIAS BIBLIOGRÁFICAS</h2>
+
+<ol>
+<li>MacPhee, R.D.E. & Flemming, C. (1999). "Requiem Æternam: The Last Five Hundred Years of Mammalian Species Extinctions". In: MacPhee, R.D.E. (ed.). <em>Extinctions in Near Time</em>. Springer.</li>
+<li>Brace, S. et al. (2016). "Evolutionary History of the Nesophontidae, the Last Unplaced Recent Mammal Family". <em>Molecular Biology and Evolution</em>, 33(12): 3095-3103.</li>
+<li>Miller, G.S. (1929). "A second collection of Mammals from caves near St. Michel, Haiti". <em>Smithsonian Miscellaneous Collections</em>, 81(9): 1-30.</li>
+<li>Turvey, S.T. (2009). <em>Holocene Extinctions</em>. Oxford University Press.</li>
+<li>Cooke, S.B. et al. (2017). "Anthropogenic extinction dominates Holocene declines of West Indian mammals". <em>Annual Review of Ecology, Evolution, and Systematics</em>, 48: 301-327.</li>
+</ol>
+
+</article>
+
+<!-- Botões de Ação -->
+{% if user.is_authenticated %}
+<div class="action-buttons">
+    <form method="post" action="{% url 'mammals:toggle_favorite' mammal.pk %}" style="display: inline;">
+        {% csrf_token %}
+        <button type="submit" class="btn-favorite {% if is_favorite %}active{% endif %}">
+            {% if is_favorite %}⭐ Remover dos Favoritos{% else %}☆ Adicionar aos Favoritos{% endif %}
+        </button>
+    </form>
+</div>
+{% endif %}
+
+<!-- Seção de Comentários -->
+<div class="comments-section" id="comentarios">
+    <h3>💬 Comentários ({{ comments|length }})</h3>
+
+    {% if user.is_authenticated %}
+    <form method="post" action="{% url 'mammals:add_comment' mammal.pk %}" class="comment-form">
+        {% csrf_token %}
+        <textarea name="content" placeholder="Escreva seu comentário..." required></textarea>
+        <button type="submit" class="btn-primary">Enviar Comentário</button>
+    </form>
+    {% else %}
+    <p><a href="{% url 'accounts:login' %}">Faça login</a> para comentar.</p>
+    {% endif %}
+
+    {% if comments %}
+    <div class="comments-list">
+        {% for comment in comments %}
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">{{ comment.user.username }}</span>
+                <span class="comment-date">{{ comment.created_at|date:"d/m/Y H:i" }}</span>
+            </div>
+            <div class="comment-content">
+                {{ comment.content }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>Nenhum comentário ainda. Seja o primeiro a comentar!</p>
+    {% endif %}
+</div>
+
+<!-- Modal para Imagens -->
+<div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="Imagem ampliada">
+</div>
+
+<script>
+// Função para abrir modal de imagem
+function openImageModal(src) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    modal.style.display = 'block';
+    modalImg.src = src;
+}
+
+// Função para fechar modal
+function closeImageModal() {
+    document.getElementById('imageModal').style.display = 'none';
+}
+
+// Smooth scroll para navegação
+document.querySelectorAll('.dossier-nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+</script>
+
+<!-- Leaflet para Mapa -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Dados de coordenadas do JSON
+    const coordinates = [
+        { location: "Caverna Atalaye - St. Michel (Haiti)", lat: 19.5667, lon: -72.1167 },
+        { location: "Trouing Jean Paul (Haiti)", lat: 19.3333, lon: -72.3333 },
+        { location: "Ilha Gonâve - Anse-à-Galets (Haiti)", lat: 18.8333, lon: -73.0833 }
+    ];
+
+    if (coordinates.length > 0) {
+        // Calcular centro
+        const avgLat = coordinates.reduce((sum, c) => sum + c.lat, 0) / coordinates.length;
+        const avgLon = coordinates.reduce((sum, c) => sum + c.lon, 0) / coordinates.length;
+
+        // Criar mapa
+        const map = L.map('distribution-map').setView([avgLat, avgLon], 9);
+
+        // Adicionar camada de tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Adicionar marcadores
+        coordinates.forEach(coord => {
+            L.marker([coord.lat, coord.lon])
+                .addTo(map)
+                .bindPopup(`<b>${coord.location}</b>`);
+        });
+
+        // Ajustar zoom para mostrar todos os marcadores
+        const bounds = L.latLngBounds(coordinates.map(c => [c.lat, c.lon]));
+        map.fitBounds(bounds, { padding: [50, 50] });
+    }
+});
+</script>
+
+{% endblock %}

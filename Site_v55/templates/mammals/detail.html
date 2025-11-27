@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{{ mammal.common_name }} - {% trans "Extinct Mammals Catalog" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Breadcrumbs -->
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <div class="breadcrumb-item">
+            <a href="{% url 'mammals:index' %}">{% trans "Home" %}</a>
+        </div>
+        <span class="breadcrumb-separator" aria-hidden="true">/</span>
+        <div class="breadcrumb-item">
+            <a href="{% url 'mammals:index' %}">{% trans "Mammals" %}</a>
+        </div>
+        <span class="breadcrumb-separator" aria-hidden="true">/</span>
+        <div class="breadcrumb-item">
+            <span class="breadcrumb-current" aria-current="page">{{ mammal.common_name }}</span>
+        </div>
+    </nav>
+
+    <div class="detail-container">
+        <div class="detail-header">
+            <h2>{{ mammal.common_name }}</h2>
+            <p class="binomial-name"><em>{{ mammal.binomial_name }}</em></p>
+        </div>
+
+        {% if mammal.image_filename %}
+        <div class="detail-image">
+            <img src="{% static 'images/' %}{{ mammal.image_filename }}" alt="{% blocktrans with name=mammal.common_name binomial=mammal.binomial_name %}Detailed image of {{ name }} ({{ binomial }}), extinct mammal{% endblocktrans %}. {{ mammal.short_description|default:'' }}">
+        </div>
+        {% endif %}
+
+        <div class="detail-content">
+            <section class="detail-section">
+                <h3 id="description-heading">📖 {% trans "Description" %}</h3>
+                <p>{{ mammal.description }}</p>
+            </section>
+
+            {% if mammal.habitat %}
+            <section class="detail-section">
+                <h3 id="habitat-heading">🏞️ {% trans "Habitat" %}</h3>
+                <p>{{ mammal.habitat }}</p>
+            </section>
+            {% endif %}
+
+            {% if mammal.distribution %}
+            <section class="detail-section">
+                <h3 id="distribution-heading">🌍 {% trans "Distribution" %}</h3>
+                <p>{{ mammal.distribution }}</p>
+            </section>
+            
+            <!-- Mapa Interativo de Distribuição -->
+            {% if map_data %}
+            <div id="distribution-map-container">
+                <h3>🗺️ {% trans "Historical Distribution Map" %}</h3>
+                <div id="distribution-map"></div>
+            </div>
+            {% endif %}
+            {% endif %}
+
+            {% if mammal.extinction_causes %}
+            <section class="detail-section">
+                <h3 id="extinction-heading">⚠️ {% trans "Extinction Causes" %}</h3>
+                <p>{{ mammal.extinction_causes }}</p>
+            </section>
+            {% endif %}
+
+            <section class="detail-section" id="taxonomy-section">
+                <h3 id="taxonomy-heading">🔬 {% trans "Taxonomy" %}</h3>
+                <p><strong>{% trans "Order" %}:</strong> {{ mammal.taxonomy_order|default:_("Not specified") }}</p>
+                <p><strong>{% trans "Continent" %}:</strong> {{ mammal.continent|default:_("Not specified") }}</p>
+            </section>
+        </div>
+
+        {% if user.is_authenticated %}
+        <div class="action-buttons">
+            <form method="post" action="{% url 'mammals:toggle_favorite' mammal.pk %}" style="display: inline;" onsubmit="this.querySelector('input[name=scroll_pos]').value = window.pageYOffset;">
+                {% csrf_token %}
+                <input type="hidden" name="scroll_pos" value="0">
+                <button type="submit" class="btn-favorite {% if is_favorite %}active{% endif %}" 
+                        aria-label="{% if is_favorite %}{% blocktrans with name=mammal.common_name %}Remove {{ name }} from favorites{% endblocktrans %}{% else %}{% blocktrans with name=mammal.common_name %}Add {{ name }} to favorites{% endblocktrans %}{% endif %}" 
+                        aria-pressed="{% if is_favorite %}true{% else %}false{% endif %}">
+                    {% if is_favorite %}⭐ {% trans "Remove from Favorites" %}{% else %}☆ {% trans "Add to Favorites" %}{% endif %}
+                </button>
+            </form>
+        </div>
+        {% endif %}
+
+        <div class="comments-section" id="comments-section">
+            <h3>💬 {% trans "Comments" %} ({{ comments|length }})</h3>
+
+            {% if user.is_authenticated %}
+            <form method="post" action="{% url 'mammals:add_comment' mammal.pk %}" class="comment-form" onsubmit="this.querySelector('input[name=scroll_pos]').value = window.pageYOffset;">
+                {% csrf_token %}
+                <input type="hidden" name="scroll_pos" value="0">
+                <textarea name="content" placeholder="{% trans 'Write your comment...' %}" required></textarea>
+                <button type="submit" class="btn-primary">{% trans "Send Comment" %}</button>
+            </form>
+            {% else %}
+            <p class="login-prompt">
+                <a href="{% url 'accounts:login' %}?next={{ request.path }}">{% trans "Login" %}</a> {% trans "to comment" %}.
+            </p>
+            {% endif %}
+
+            <div class="comments-list">
+                {% for comment in comments %}
+                <div class="comment">
+                    <div class="comment-header">
+                        <strong>{{ comment.user.username }}</strong>
+                        <span class="comment-date">{{ comment.created_at|date:"d/m/Y H:i" }}</span>
+                    </div>
+                    <p class="comment-content">{{ comment.content }}</p>
+                    {% if user == comment.user or user.is_authenticated and user.profile.is_admin %}
+                    <div class="comment-actions">
+                        <form method="post" action="{% url 'mammals:delete_comment' comment.pk %}" style="display: inline;" onsubmit="this.querySelector('input[name=scroll_pos]').value = window.pageYOffset;">
+                            {% csrf_token %}
+                            <input type="hidden" name="scroll_pos" value="0">
+                            <button type="submit" class="btn-delete" onclick="return confirm('{% trans "Are you sure you want to delete this comment?" %}')">{% trans "Delete" %}</button>
+                        </form>
+                    </div>
+                    {% endif %}
+                </div>
+                {% empty %}
+                <p class="no-comments">{% trans "No comments yet. Be the first!" %}</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="back-link">
+            <a href="{% url 'mammals:index' %}" class="btn-secondary">← {% trans "Back to list" %}</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block extra_css %}
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""/>
+{% endblock %}
+
+{% block extra_js %}
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+<!-- Script do Mapa -->
+<script src="{% static 'js/map.js' %}"></script>
+
+{% if map_data %}
+<script>
+    // Inicializar mapa quando o DOM estiver pronto
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+            initMammalMap('{{ map_data|escapejs }}');
+        });
+    } else {
+        // DOM já carregado
+        initMammalMap('{{ map_data|escapejs }}');
+    }
+</script>
+{% endif %}
+
+<script>
+// Restaurar posição de scroll após redirect
+(function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const scrollPos = urlParams.get('scroll');
+    
+    if (scrollPos) {
+        // Aguardar o DOM estar completamente carregado
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(function() {
+                    window.scrollTo(0, parseInt(scrollPos));
+                }, 100);
+            });
+        } else {
+            setTimeout(function() {
+                window.scrollTo(0, parseInt(scrollPos));
+            }, 100);
+        }
+    }
+})();
+</script>
+
+{% endblock %}
+

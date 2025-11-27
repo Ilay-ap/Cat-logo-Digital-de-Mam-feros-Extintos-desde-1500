@@ -1,0 +1,2820 @@
+{
+  "mammals": [
+    {
+      "common_name": "Thylacine (Tasmanian Tiger)",
+      "binomial_name": "Thylacinus cynocephalus",
+      "description": "Thylacine (Tasmanian Tiger) (Thylacinus cynocephalus) was an extinct mammal that lived in Australian mainland, Tasmania, New Guinea, Western Australia (Nullarbor Plain, Burrup Peninsula), Kangaroo Island, Papua New Guinea (Chimbu Province), Southern Victoria. Extinção: 1936 (last known individual died in Hobart Zoo); possibly between 1980s and early 2000s for wild individuals. Última localização conhecida: Hobart Zoo, Tasmania (for the last known individual)..",
+      "distribution": "Australian mainland, Tasmania, New Guinea, Western Australia (Nullarbor Plain, Burrup Peninsula), Kangaroo Island, Papua New Guinea (Chimbu Province), Southern Victoria. Extinção: 1936 (last known individual died in Hobart Zoo); possibly between 1980s and early 2000s for wild individuals. Última localização conhecida: Hobart Zoo, Tasmania (for the last known individual).",
+      "habitat": "Historical habitat of Thylacine (Tasmanian Tiger) included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Thylacinus_cynocephalus.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Australian mainland",
+          "lat": -28.6360625,
+          "lon": 153.6386357,
+          "display_name": "Eastern most point of the Australian mainland, Cape Byron Walking Track, Byron Bay, Byron Shire Council, New South Wales, 2481, Australia"
+        },
+        {
+          "location": "Tasmania",
+          "lat": -42.035067,
+          "lon": 146.6366887,
+          "display_name": "Tasmania, Australia"
+        },
+        {
+          "location": "New Guinea",
+          "lat": -5.5226203,
+          "lon": 142.0871194,
+          "display_name": "New Guinea, Southern Region, Papua Niugini"
+        },
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Broad-faced potoroo",
+      "binomial_name": "Potorous platyops",
+      "description": "Broad-faced potoroo (Potorous platyops) was an extinct mammal that lived in Austrália (Sudoeste da Austrália, Planície de Nullarbor, Ilha Kangaroo). Extinção: c. 1875 (entre 1875 e 1905). Última localização conhecida: Walyema Swamps (próximo a Northam, Austrália Ocidental) e Ilha Kangaroo..",
+      "distribution": "Austrália (Sudoeste da Austrália, Planície de Nullarbor, Ilha Kangaroo). Extinção: c. 1875 (entre 1875 e 1905). Última localização conhecida: Walyema Swamps (próximo a Northam, Austrália Ocidental) e Ilha Kangaroo.",
+      "habitat": "Historical habitat of Broad-faced potoroo included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Potorous_platyops.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Austrália",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Sudoeste da Austrália",
+          "lat": -32.0,
+          "lon": 116.0,
+          "display_name": "Aasia ja Australia, Vasaramäki, Skanssi-Uittamo, Turku, Turun seutukunta, Varsinais-Suomi, Manner-Suomi, 20520, Suomi / Finland"
+        },
+        {
+          "location": "Ilha Kangaroo",
+          "lat": -35.8182635,
+          "lon": 137.1566125,
+          "display_name": "Kangaroo Island, Kangaroo Island Council, South Australia, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Eastern hare-wallaby",
+      "binomial_name": "Lagorchestes leporides",
+      "description": "Eastern hare-wallaby (Lagorchestes leporides) was an extinct mammal that lived in Southeastern Australia, New South Wales. Extinção: 1889. Última localização conhecida: New South Wales, Australia..",
+      "distribution": "Southeastern Australia, New South Wales. Extinção: 1889. Última localização conhecida: New South Wales, Australia.",
+      "habitat": "Historical habitat of Eastern hare-wallaby included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Diprotodontia",
+      "image_filename": "Lagorchestes_asomatus.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Southeastern Australia",
+          "lat": -21.2450015,
+          "lon": 155.7901366,
+          "display_name": "Kenn Reef (southeastern cay), Coral Sea Islands, Australia"
+        },
+        {
+          "location": "New South Wales",
+          "lat": -31.8759835,
+          "lon": 147.2869493,
+          "display_name": "New South Wales, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Lake Mackay hare-wallaby",
+      "binomial_name": "Lagorchestes asomatus",
+      "description": "Lake Mackay hare-wallaby (Lagorchestes asomatus) was an extinct mammal that lived in Austrália (Território do Norte, Deserto de Tanami, Deserto de Gibson). Extinção: Entre 1940s e 1960s (final dos anos 1940s no Deserto de Tanami, início dos anos 1960s no Deserto de Gibson). Última localização conhecida: Deserto de Gibson (início dos anos 1960s)..",
+      "distribution": "Austrália (Território do Norte, Deserto de Tanami, Deserto de Gibson). Extinção: Entre 1940s e 1960s (final dos anos 1940s no Deserto de Tanami, início dos anos 1960s no Deserto de Gibson). Última localização conhecida: Deserto de Gibson (início dos anos 1960s).",
+      "habitat": "Historical habitat of Lake Mackay hare-wallaby included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Diprotodontia",
+      "image_filename": "Lagorchestes_asomatus.jpg",
+      "continent": "Austrália",
+      "coordinates": [
+        {
+          "location": "Austrália",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Território do Norte",
+          "lat": -19.8516101,
+          "lon": 133.2303375,
+          "display_name": "Northern Territory, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Desert rat-kangaroo",
+      "binomial_name": "Caloprymnus campestris",
+      "description": "Desert rat-kangaroo (Caloprymnus campestris) was an extinct mammal that lived in Australia (Queensland, South Australia, specifically eastern Lake Eyre basin). Extinção: 1994 (declared extinct by IUCN); last confirmed sighting 1935. Última localização conhecida: Near Ooroowilanie, east of Lake Eyre, South Australia..",
+      "distribution": "Australia (Queensland, South Australia, specifically eastern Lake Eyre basin). Extinção: 1994 (declared extinct by IUCN); last confirmed sighting 1935. Última localização conhecida: Near Ooroowilanie, east of Lake Eyre, South Australia.",
+      "habitat": "Historical habitat of Desert rat-kangaroo included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Caloprymnus_campestris.jpg",
+      "continent": "Australia",
+      "coordinates": [
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Queensland",
+          "lat": -22.1646782,
+          "lon": 144.5844903,
+          "display_name": "Queensland, Australia"
+        },
+        {
+          "location": "South Australia",
+          "lat": -30.5343665,
+          "lon": 135.6301212,
+          "display_name": "South Australia, Australia"
+        },
+        {
+          "location": "Lake Eyre basin",
+          "lat": -27.0,
+          "lon": 137.0,
+          "display_name": "Lake Eyre Basin, Simpson Desert, Pastoral Unincorporated Area, South Australia, 5734, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Desert bandicoot",
+      "binomial_name": "Perameles eremiana",
+      "description": "Desert bandicoot (Perameles eremiana) was an extinct mammal that lived in Austrália (Território do Norte, Austrália do Sul, Austrália Ocidental, Nova Gales do Sul), Grande Deserto de Vitória. Extinção: 1943 (último espécime coletado), possivelmente até 1960s. Última localização conhecida: Canning Stock Route, Austrália Ocidental (último espécime)..",
+      "distribution": "Austrália (Território do Norte, Austrália do Sul, Austrália Ocidental, Nova Gales do Sul), Grande Deserto de Vitória. Extinção: 1943 (último espécime coletado), possivelmente até 1960s. Última localização conhecida: Canning Stock Route, Austrália Ocidental (último espécime).",
+      "habitat": "Historical habitat of Desert bandicoot included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Peramelemorphia",
+      "image_filename": "Perameles_eremiana.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Austrália",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Território do Norte",
+          "lat": -19.8516101,
+          "lon": 133.2303375,
+          "display_name": "Northern Territory, Australia"
+        },
+        {
+          "location": "Austrália do Sul",
+          "lat": -31.8759835,
+          "lon": 147.2869493,
+          "display_name": "New South Wales, Australia"
+        },
+        {
+          "location": "Austrália Ocidental",
+          "lat": -25.2303005,
+          "lon": 121.0187246,
+          "display_name": "Western Australia, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Lesser bilby",
+      "binomial_name": "Macrotis leucura",
+      "description": "Lesser bilby (Macrotis leucura) was an extinct mammal that lived in Australia (Gibson Desert, Great Sandy Desert, northeast South Australia, southeast Northern Territory, Lake Eyre Basin). Extinção: 1950s-1960s. Última localização conhecida: Steele Gap, Simpson Desert, Northern Territory (skull found in 1967, estimated under 15 years old)..",
+      "distribution": "Australia (Gibson Desert, Great Sandy Desert, northeast South Australia, southeast Northern Territory, Lake Eyre Basin). Extinção: 1950s-1960s. Última localização conhecida: Steele Gap, Simpson Desert, Northern Territory (skull found in 1967, estimated under 15 years old).",
+      "habitat": "Historical habitat of Lesser bilby included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Notomys_macrotis.jpg",
+      "continent": "Australia",
+      "coordinates": [
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Gibson Desert",
+          "lat": -25.03,
+          "lon": 125.5,
+          "display_name": "Gibson Desert, Gibson Desert South, Shire Of Ngaanyatjarraku, Western Australia, Australia"
+        },
+        {
+          "location": "Great Sandy Desert",
+          "lat": 20.1914858,
+          "lon": 51.6909114,
+          "display_name": "الربع الخالي, السعودية"
+        },
+        {
+          "location": "southeast  Territory",
+          "lat": -23.9362092,
+          "lon": -47.5413069,
+          "display_name": "Guyra Pepó Indigenous Territory, Tapiraí, Região Imediata de Sorocaba, Região Metropolitana de Sorocaba, Região Geográfica Intermediária de Sorocaba, São Paulo, Região Sudeste, 18180-000, Brasil"
+        },
+        {
+          "location": "Lake Eyre Basin",
+          "lat": -27.0,
+          "lon": 137.0,
+          "display_name": "Lake Eyre Basin, Simpson Desert, Pastoral Unincorporated Area, South Australia, 5734, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Southern pig-footed bandicoot",
+      "binomial_name": "Chaeropus ecaudatus",
+      "description": "Southern pig-footed bandicoot (Chaeropus ecaudatus) was an extinct mammal that lived in Austrália (sudeste, oeste, sudoeste, incluindo Austrália do Sul, Austrália Ocidental, Nova Gales do Sul e Victoria). Extinção: Década de 1950 (último registro em 1945). Última localização conhecida: Sul da Austrália..",
+      "distribution": "Austrália (sudeste, oeste, sudoeste, incluindo Austrália do Sul, Austrália Ocidental, Nova Gales do Sul e Victoria). Extinção: Década de 1950 (último registro em 1945). Última localização conhecida: Sul da Austrália.",
+      "habitat": "Historical habitat of Southern pig-footed bandicoot included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Peramelemorphia",
+      "image_filename": "chaeropus_yirratji.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Austrália",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "sudeste",
+          "lat": -24.6563846,
+          "lon": 26.0575429,
+          "display_name": "South-East District, Botswana"
+        },
+        {
+          "location": "oeste",
+          "lat": -28.7531756,
+          "lon": -52.0152854,
+          "display_name": "União da Serra, Região Geográfica Imediata de Nova Prata - Guaporé, Região Geográfica Intermediária de Caxias do Sul, Rio Grande do Sul, Região Sul, Brasil"
+        },
+        {
+          "location": "sudoeste",
+          "lat": 5.0577606,
+          "lon": 9.2289407,
+          "display_name": "Southwest, Cameroun"
+        }
+      ]
+    },
+    {
+      "common_name": "Auroch",
+      "binomial_name": "Bos primigenius",
+      "description": "Auroch (Bos primigenius) was an extinct mammal that lived in Polônia (Floresta de Jaktorów), Índia (subcontinente indiano), Norte da África, Sicília (Itália), Kythira (Grécia), Grã-Bretanha. Extinção: 1627 (último indivíduo conhecido na Polônia). Última localização conhecida: Floresta de Jaktorów, Polônia..",
+      "distribution": "Polônia (Floresta de Jaktorów), Índia (subcontinente indiano), Norte da África, Sicília (Itália), Kythira (Grécia), Grã-Bretanha. Extinção: 1627 (último indivíduo conhecido na Polônia). Última localização conhecida: Floresta de Jaktorów, Polônia.",
+      "habitat": "Historical habitat of Auroch included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "auroch.png",
+      "continent": "Europa, Ásia, África",
+      "coordinates": [
+        {
+          "location": "Polônia",
+          "lat": 52.215933,
+          "lon": 19.134422,
+          "display_name": "Polska"
+        },
+        {
+          "location": "Índia",
+          "lat": 22.3511148,
+          "lon": 78.6677428,
+          "display_name": "India"
+        },
+        {
+          "location": "Norte da África",
+          "lat": -6.1118535,
+          "lon": -49.9051253,
+          "display_name": "Rua Africa do Sul, Parque da Nações II, Parauapebas, Região Geográfica Imediata de Parauapebas, Região Geográfica Intermediária de Marabá, Pará, Região Norte, Brasil"
+        },
+        {
+          "location": "Sicília",
+          "lat": 37.587794,
+          "lon": 14.155048,
+          "display_name": "Sicilia, Italia"
+        },
+        {
+          "location": "Itália",
+          "lat": 42.6384261,
+          "lon": 12.674297,
+          "display_name": "Italia"
+        }
+      ]
+    },
+    {
+      "common_name": "Falkland Islands wolf",
+      "binomial_name": "Dusicyon australis",
+      "description": "Falkland Islands wolf (Dusicyon australis) was an extinct mammal that lived in Falkland Islands (West Falkland, East Falkland). Extinção: 1876. Última localização conhecida: Falkland Islands (last known wild populations on West Falkland)..",
+      "distribution": "Falkland Islands (West Falkland, East Falkland). Extinção: 1876. Última localização conhecida: Falkland Islands (last known wild populations on West Falkland).",
+      "habitat": "Historical habitat of Falkland Islands wolf included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Carnivora",
+      "image_filename": "Dusicyon_australis.jpg",
+      "continent": "South America",
+      "coordinates": [
+        {
+          "location": "South America",
+          "lat": -21.0002179,
+          "lon": -61.0006565,
+          "display_name": "América do Sul;América del Sur"
+        },
+        {
+          "location": "Falkland Islands",
+          "lat": -51.9492937,
+          "lon": -59.5383657,
+          "display_name": "Falkland Islands"
+        },
+        {
+          "location": "West Falkland",
+          "lat": -51.7978041,
+          "lon": -60.0109331,
+          "display_name": "West Falkland, Falkland Islands"
+        },
+        {
+          "location": "East Falkland",
+          "lat": -51.7963096,
+          "lon": -58.5955387,
+          "display_name": "East Falkland, FIQQ 1ZZ, Falkland Islands"
+        }
+      ]
+    },
+    {
+      "common_name": "Foca-monge-do-caribe",
+      "binomial_name": "Neomonachus tropicalis",
+      "description": "Foca-monge-do-caribe (Neomonachus tropicalis) was an extinct mammal that lived in Antigua e Barbuda; Bahamas; Belize; Costa Rica; Cuba; Dominica; República Dominicana; Guadalupe; Haiti; Honduras (Honduras continental, Ilhas Caribenhas de Honduras); Jamaica; México (Veracruz, Yucatán); Nicarágua (Ilhas Caribenhas da Nicarágua); Porto Rico; Estados Unidos (Flórida, Geórgia). Extinção: Último avistamento confirmado em 1952; declarado oficialmente extinto pelos Estados Unidos em 2008.. Última localização conhecida: Serranilla Bank..",
+      "distribution": "Antigua e Barbuda; Bahamas; Belize; Costa Rica; Cuba; Dominica; República Dominicana; Guadalupe; Haiti; Honduras (Honduras continental, Ilhas Caribenhas de Honduras); Jamaica; México (Veracruz, Yucatán); Nicarágua (Ilhas Caribenhas da Nicarágua); Porto Rico; Estados Unidos (Flórida, Geórgia). Extinção: Último avistamento confirmado em 1952; declarado oficialmente extinto pelos Estados Unidos em 2008.. Última localização conhecida: Serranilla Bank.",
+      "habitat": "Historical habitat of Foca-monge-do-caribe included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Neomonachus_tropicalis.jpg",
+      "continent": "América do Norte",
+      "coordinates": [
+        {
+          "location": "América do Norte",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "Antigua e Barbuda",
+          "lat": 17.2234721,
+          "lon": -61.9554608,
+          "display_name": "Antigua and Barbuda"
+        },
+        {
+          "location": "Bahamas",
+          "lat": 24.7736546,
+          "lon": -78.0000547,
+          "display_name": "The Bahamas"
+        },
+        {
+          "location": "Belize",
+          "lat": 17.1204943,
+          "lon": -88.6859028,
+          "display_name": "Belize"
+        },
+        {
+          "location": "Costa Rica",
+          "lat": 10.2735633,
+          "lon": -84.0739102,
+          "display_name": "Costa Rica"
+        }
+      ]
+    },
+    {
+      "common_name": "Leão-marinho-japonês",
+      "binomial_name": "Zalophus japonicus",
+      "description": "Leão-marinho-japonês (Zalophus japonicus) was an extinct mammal that lived in Japão (Arquipélago Japonês, Ilha Rebun, Hokkaido), Coreia (Península Coreana), Rússia (Península de Kamchatka, Ilha Sacalina). Extinção: 1970s (último registro confirmado em 1974). Última localização conhecida: Ilha Rebun, norte de Hokkaido, Japão..",
+      "distribution": "Japão (Arquipélago Japonês, Ilha Rebun, Hokkaido), Coreia (Península Coreana), Rússia (Península de Kamchatka, Ilha Sacalina). Extinção: 1970s (último registro confirmado em 1974). Última localização conhecida: Ilha Rebun, norte de Hokkaido, Japão.",
+      "habitat": "Historical habitat of Leão-marinho-japonês included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Zalophus_japonicus.jpg",
+      "continent": "Ásia",
+      "coordinates": [
+        {
+          "location": "Ásia",
+          "lat": 51.2086975,
+          "lon": 89.2343748,
+          "display_name": "Asia"
+        },
+        {
+          "location": "Japão",
+          "lat": 36.5748441,
+          "lon": 139.2394179,
+          "display_name": "日本"
+        },
+        {
+          "location": "Arquipélago Japonês",
+          "lat": 37.7409314,
+          "lon": -25.6658075,
+          "display_name": "Musaxi Restaurante Japonês Teppan-yaki, 51, Rua da Misericórdia, Ponta Delgada (São Sebastião), Ponta Delgada, Açores, 9500, Portugal"
+        },
+        {
+          "location": "Hokkaido",
+          "lat": 43.4339536,
+          "lon": 142.9521222,
+          "display_name": "北海道地方, 日本"
+        },
+        {
+          "location": "Coreia",
+          "lat": 36.638392,
+          "lon": 127.6961188,
+          "display_name": "대한민국"
+        }
+      ]
+    },
+    {
+      "common_name": "Vaca marinha de Steller",
+      "binomial_name": "Hydrodamalis gigas",
+      "description": "Vaca marinha de Steller (Hydrodamalis gigas) was an extinct mammal that lived in Ilhas do Comandante (Rússia), Ilha de Bering (Rússia), Ilha de Cobre (Rússia), Alasca (EUA). Extinção: 1768. Última localização conhecida: Ilha de Bering..",
+      "distribution": "Ilhas do Comandante (Rússia), Ilha de Bering (Rússia), Ilha de Cobre (Rússia), Alasca (EUA). Extinção: 1768. Última localização conhecida: Ilha de Bering.",
+      "habitat": "Historical habitat of Vaca marinha de Steller included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Hydrodamalis_gigas.jpg",
+      "continent": "Ásia, América do Norte",
+      "coordinates": [
+        {
+          "location": "Ásia, América do Norte",
+          "lat": -10.2001473,
+          "lon": -48.8997038,
+          "display_name": "Rua Asia, Jardim América, Paraíso do Tocantins, Região Geográfica Imediata de Paraíso do Tocantins, Região Geográfica Intermediária de Palmas, Tocantins, Região Norte, 77600-000, Brasil"
+        },
+        {
+          "location": "Ilhas do Comandante",
+          "lat": 39.5666073,
+          "lon": 2.6617549,
+          "display_name": "Carrer de les Finestres Verdes, el Call, Foners, Palma, Illes Balears, 07006, España"
+        },
+        {
+          "location": "Rússia",
+          "lat": 64.6863136,
+          "lon": 97.7453061,
+          "display_name": "Россия"
+        },
+        {
+          "location": "Ilha de Bering",
+          "lat": 55.0215753,
+          "lon": 166.2712426,
+          "display_name": "Остров Беринга, Алеутский муниципальный округ, Камчатский край, Дальневосточный федеральный округ, 684500, Россия"
+        },
+        {
+          "location": "Ilha de Cobre",
+          "lat": -7.7631468,
+          "lon": -34.849809,
+          "display_name": "Rua Poço do Cobre, Vila da Felicidade, Oiteiro, Ilha de Itamaracá, Região Geográfica Imediata do Recife, Região Metropolitana do Recife, Região Geográfica Intermediária do Recife, Pernambuco, Região Nordeste, 53900-000, Brasil"
+        }
+      ]
+    },
+    {
+      "common_name": "Bramble Cay melomys",
+      "binomial_name": "Melomys rubicola",
+      "description": "Bramble Cay melomys (Melomys rubicola) was an extinct mammal that lived in Bramble Cay, Great Barrier Reef, Australia. Extinção: May 2015 (IUCN), February 2019 (Australian government). Last seen in 2009.. Última localização conhecida: Bramble Cay..",
+      "distribution": "Bramble Cay, Great Barrier Reef, Australia. Extinção: May 2015 (IUCN), February 2019 (Australian government). Last seen in 2009.. Última localização conhecida: Bramble Cay.",
+      "habitat": "Historical habitat of Bramble Cay melomys included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Melomys_rubicola.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Bramble Cay",
+          "lat": -9.1418633,
+          "lon": 143.8756435,
+          "display_name": "Bramble Cay, Torres Strait, Torres Shire, Queensland, Australia"
+        },
+        {
+          "location": "Great Barrier Reef",
+          "lat": -16.35,
+          "lon": 145.9,
+          "display_name": "Great Barrier Reef, Australia"
+        },
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Galápagos giant rat",
+      "binomial_name": "Megaoryzomys curioi",
+      "description": "Galápagos giant rat (Megaoryzomys curioi) was an extinct mammal that lived in Ilha de Santa Cruz, Ilhas Galápagos. Extinção: Pós-colonização europeia (devido à introdução de espécies invasoras). Última localização conhecida: Ilha de Santa Cruz, Ilhas Galápagos..",
+      "distribution": "Ilha de Santa Cruz, Ilhas Galápagos. Extinção: Pós-colonização europeia (devido à introdução de espécies invasoras). Última localização conhecida: Ilha de Santa Cruz, Ilhas Galápagos.",
+      "habitat": "Historical habitat of Galápagos giant rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Megaoryzomys_curioi.jpg",
+      "continent": "América do Sul",
+      "coordinates": [
+        {
+          "location": "América do Sul",
+          "lat": -21.0002179,
+          "lon": -61.0006565,
+          "display_name": "América do Sul;América del Sur"
+        },
+        {
+          "location": "Ilha de Santa Cruz",
+          "lat": -7.3615252,
+          "lon": -58.108623,
+          "display_name": "Ilha de Santa Cruz, Apiacás, Região Geográfica Imediata de Alta Floresta, Região Geográfica Intermediária de Sinop, Mato Grosso, Região Centro-Oeste, Brasil"
+        },
+        {
+          "location": "Ilhas Galápagos",
+          "lat": 39.8815668,
+          "lon": 4.254892,
+          "display_name": "Carrer Illes Galápagos, Maó, Menorca, Illes Balears, 07703, España"
+        }
+      ]
+    },
+    {
+      "common_name": "Big-eared hopping mouse",
+      "binomial_name": "Notomys macrotis",
+      "description": "Big-eared hopping mouse (Notomys macrotis) was an extinct mammal that lived in Moore River area, South-western Australia, Western Australia, Perth, King George's Sound. Extinção: Last collected July 1843, presumed extinct by 1860s. Última localização conhecida: Moore River area, Western Australia, near New Norcia..",
+      "distribution": "Moore River area, South-western Australia, Western Australia, Perth, King George's Sound. Extinção: Last collected July 1843, presumed extinct by 1860s. Última localização conhecida: Moore River area, Western Australia, near New Norcia.",
+      "habitat": "Historical habitat of Big-eared hopping mouse included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Notomys_amplus.jpg",
+      "continent": "Australia",
+      "coordinates": [
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Moore River area",
+          "lat": -24.6887299,
+          "lon": 152.1956932,
+          "display_name": "Kolan River Fish Habitat Area, Moore Park Beach, Avondale, Bundaberg Region, Queensland, Australia"
+        },
+        {
+          "location": "South- Australia",
+          "lat": -30.5343665,
+          "lon": 135.6301212,
+          "display_name": "South Australia, Australia"
+        },
+        {
+          "location": "Perth",
+          "lat": -31.9558967,
+          "lon": 115.8605784,
+          "display_name": "Perth, City of Perth, Western Australia, 6000, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Darling Downs hopping mouse",
+      "binomial_name": "Notomys mordax",
+      "description": "Darling Downs hopping mouse (Notomys mordax) was an extinct mammal that lived in Australia (Queensland, Darling Downs). Extinção: 1840s. Última localização conhecida: Darling Downs, Queensland, Australia..",
+      "distribution": "Australia (Queensland, Darling Downs). Extinção: 1840s. Última localização conhecida: Darling Downs, Queensland, Australia.",
+      "habitat": "Historical habitat of Darling Downs hopping mouse included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Notomys_amplus.jpg",
+      "continent": "Australia",
+      "coordinates": [
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Queensland",
+          "lat": -22.1646782,
+          "lon": 144.5844903,
+          "display_name": "Queensland, Australia"
+        },
+        {
+          "location": "Darling Downs",
+          "lat": -32.1946026,
+          "lon": 115.9948579,
+          "display_name": "Darling Downs, Shire of Serpentine-Jarrahdale, Western Australia, 6122, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "White-footed rabbit-rat",
+      "binomial_name": "Conilurus albipes",
+      "description": "White-footed rabbit-rat (Conilurus albipes) was an extinct mammal that lived in Australia (Adelaide, Sydney, South-eastern Australia, Victoria, Bulloo River system, Coopers Creek). Extinção: c. 1845 (possibly 1856-57 or 1930s). Última localização conhecida: Bulloo River system, Coopers Creek..",
+      "distribution": "Australia (Adelaide, Sydney, South-eastern Australia, Victoria, Bulloo River system, Coopers Creek). Extinção: c. 1845 (possibly 1856-57 or 1930s). Última localização conhecida: Bulloo River system, Coopers Creek.",
+      "habitat": "Historical habitat of White-footed rabbit-rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Conilurus_albipes.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Adelaide",
+          "lat": -34.9281805,
+          "lon": 138.5999312,
+          "display_name": "Adelaide, Adelaide City Council, South Australia, Australia"
+        },
+        {
+          "location": "Sydney",
+          "lat": -33.8698439,
+          "lon": 151.2082848,
+          "display_name": "Sydney, Council of the City of Sydney, New South Wales, Australia"
+        },
+        {
+          "location": "South- Australia",
+          "lat": -30.5343665,
+          "lon": 135.6301212,
+          "display_name": "South Australia, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Short-tailed hopping mouse",
+      "binomial_name": "Notomys amplus",
+      "description": "Short-tailed hopping mouse (Notomys amplus) was an extinct mammal that lived in Australia (Central Australia, Northern Territory). Extinção: June 1896. Última localização conhecida: Charlotte Waters..",
+      "distribution": "Australia (Central Australia, Northern Territory). Extinção: June 1896. Última localização conhecida: Charlotte Waters.",
+      "habitat": "Historical habitat of Short-tailed hopping mouse included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Notomys_amplus.jpg",
+      "continent": "Australia",
+      "coordinates": [
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Territory",
+          "lat": 44.4308975,
+          "lon": -89.6884637,
+          "display_name": "Wisconsin, United States"
+        }
+      ]
+    },
+    {
+      "common_name": "Long-tailed hopping mouse",
+      "binomial_name": "Notomys longicaudatus",
+      "description": "Long-tailed hopping mouse (Notomys longicaudatus) was an extinct mammal that lived in Northern Territory, South Australia, New South Wales, Western Australia. Extinção: 1901 or possibly 1902 (last live specimen). Última localização conhecida: Adelaide (captive individual died in 1901), Kalgoorlie (skeleton in 1944), Alice Springs (first specimen discovered)..",
+      "distribution": "Northern Territory, South Australia, New South Wales, Western Australia. Extinção: 1901 or possibly 1902 (last live specimen). Última localização conhecida: Adelaide (captive individual died in 1901), Kalgoorlie (skeleton in 1944), Alice Springs (first specimen discovered).",
+      "habitat": "Historical habitat of Long-tailed hopping mouse included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Notomys_amplus.jpg",
+      "continent": "Australia",
+      "coordinates": [
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Territory",
+          "lat": 44.4308975,
+          "lon": -89.6884637,
+          "display_name": "Wisconsin, United States"
+        },
+        {
+          "location": "South Australia",
+          "lat": -30.5343665,
+          "lon": 135.6301212,
+          "display_name": "South Australia, Australia"
+        },
+        {
+          "location": "New South Wales",
+          "lat": -31.8759835,
+          "lon": 147.2869493,
+          "display_name": "New South Wales, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Desmarest's pilorie / Martinique giant rice rat",
+      "binomial_name": "Megalomys desmarestii",
+      "description": "Desmarest's pilorie / Martinique giant rice rat (Megalomys desmarestii) was an extinct mammal that lived in Martinica. Extinção: 1897 (segundo IUCN), ou após 8 de maio de 1902. Última localização conhecida: Martinica (especialmente a área de Saint-Pierre)..",
+      "distribution": "Martinica. Extinção: 1897 (segundo IUCN), ou após 8 de maio de 1902. Última localização conhecida: Martinica (especialmente a área de Saint-Pierre).",
+      "habitat": "Historical habitat of Desmarest's pilorie / Martinique giant rice rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Megalomys_desmarestii.jpg",
+      "continent": "América do Norte (Caribe)",
+      "coordinates": [
+        {
+          "location": "América do Norte (Caribe)",
+          "lat": 34.1205947,
+          "lon": -77.8771272,
+          "display_name": "Caribe Court, New Hanover County, North Carolina, 28412, United States"
+        },
+        {
+          "location": "Martinica",
+          "lat": 14.6113732,
+          "lon": -60.9620777,
+          "display_name": "Martinique, France"
+        }
+      ]
+    },
+    {
+      "common_name": "Saint Lucia pilorie / Saint Lucia giant rice rat",
+      "binomial_name": "Megalomys luciae",
+      "description": "Saint Lucia pilorie / Saint Lucia giant rice rat (Megalomys luciae) was an extinct mammal that lived in Saint Lucia. Extinção: 1881. Última localização conhecida: London Zoo (last known specimen)..",
+      "distribution": "Saint Lucia. Extinção: 1881. Última localização conhecida: London Zoo (last known specimen).",
+      "habitat": "Historical habitat of Saint Lucia pilorie / Saint Lucia giant rice rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Megalomys_desmarestii.jpg",
+      "continent": "North America (Caribbean)",
+      "coordinates": [
+        {
+          "location": "Saint Lucia",
+          "lat": 13.8250489,
+          "lon": -60.975036,
+          "display_name": "Saint Lucia"
+        }
+      ]
+    },
+    {
+      "common_name": "Bulldog rat",
+      "binomial_name": "Rattus nativitatis",
+      "description": "Bulldog rat (Rattus nativitatis) was an extinct mammal that lived in Christmas Island. Extinção: 1903-1908. Última localização conhecida: Christmas Island..",
+      "distribution": "Christmas Island. Extinção: 1903-1908. Última localização conhecida: Christmas Island.",
+      "habitat": "Historical habitat of Bulldog rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Rattus_macleari.jpg",
+      "continent": "Oceania (Indian Ocean)",
+      "coordinates": [
+        {
+          "location": "Christmas Island",
+          "lat": -10.4837768,
+          "lon": 105.64723,
+          "display_name": "Christmas Island, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Rato de Maclear",
+      "binomial_name": "Rattus macleari",
+      "description": "Rato de Maclear (Rattus macleari) was an extinct mammal that lived in Ilha Christmas. Extinção: 1903-1904. Última localização conhecida: Ilha Christmas..",
+      "distribution": "Ilha Christmas. Extinção: 1903-1904. Última localização conhecida: Ilha Christmas.",
+      "habitat": "Historical habitat of Rato de Maclear included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Rattus_macleari.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Ilha Christmas",
+          "lat": -10.4837768,
+          "lon": 105.64723,
+          "display_name": "Christmas Island, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Pemberton's deer mouse",
+      "binomial_name": "Peromyscus pembertoni",
+      "description": "Pemberton's deer mouse (Peromyscus pembertoni) was an extinct mammal that lived in San Pedro Nolasco Island, Mexico. Extinção: 1931. Última localização conhecida: San Pedro Nolasco Island..",
+      "distribution": "San Pedro Nolasco Island, Mexico. Extinção: 1931. Última localização conhecida: San Pedro Nolasco Island.",
+      "habitat": "Historical habitat of Pemberton's deer mouse included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Peromyscus_pembertoni.jpg",
+      "continent": "North America",
+      "coordinates": [
+        {
+          "location": "North America",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "San Pedro Nolasco Island",
+          "lat": 27.9692184,
+          "lon": -111.3793476,
+          "display_name": "Isla San Pedro Nolasco, Guaymas, Sonora, México"
+        },
+        {
+          "location": "Mexico",
+          "lat": 23.6585116,
+          "lon": -102.0077097,
+          "display_name": "México"
+        }
+      ]
+    },
+    {
+      "common_name": "Samaná hutia",
+      "binomial_name": "Plagiodontia ipnaeum",
+      "description": "Samaná hutia (Plagiodontia ipnaeum) was an extinct mammal that lived in República Dominicana, Haiti (Ilha de Hispaniola). Extinção: Após 1500 d.C. (período da colonização europeia), possivelmente por volta de 1600 d.C.. Última localização conhecida: Ilha de Hispaniola (República Dominicana e Haiti)..",
+      "distribution": "República Dominicana, Haiti (Ilha de Hispaniola). Extinção: Após 1500 d.C. (período da colonização europeia), possivelmente por volta de 1600 d.C.. Última localização conhecida: Ilha de Hispaniola (República Dominicana e Haiti).",
+      "habitat": "Historical habitat of Samaná hutia included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Plagiodontia_ipnaeum.jpg",
+      "continent": "América do Norte (Caribe)",
+      "coordinates": [
+        {
+          "location": "América do Norte (Caribe)",
+          "lat": 34.1205947,
+          "lon": -77.8771272,
+          "display_name": "Caribe Court, New Hanover County, North Carolina, 28412, United States"
+        },
+        {
+          "location": "República Dominicana",
+          "lat": 19.0974031,
+          "lon": -70.3028026,
+          "display_name": "República Dominicana"
+        },
+        {
+          "location": "Haiti",
+          "lat": 19.1399952,
+          "lon": -72.3570972,
+          "display_name": "Ayiti"
+        },
+        {
+          "location": "Ilha de Hispaniola",
+          "lat": 18.7785812,
+          "lon": -70.5427698,
+          "display_name": "La Hispaniola, República Dominicana"
+        }
+      ]
+    },
+    {
+      "common_name": "Lesser stick-nest rat",
+      "binomial_name": "Leporillus apicalis",
+      "description": "Lesser stick-nest rat (Leporillus apicalis) was an extinct mammal that lived in Australia (Western Australia, South Australia, Northern Territory, New South Wales, Victoria). Extinção: 1933 (last confirmed sighting), 2016 (IUCN reclassification to extinct). Última localização conhecida: Mount Crombie..",
+      "distribution": "Australia (Western Australia, South Australia, Northern Territory, New South Wales, Victoria). Extinção: 1933 (last confirmed sighting), 2016 (IUCN reclassification to extinct). Última localização conhecida: Mount Crombie.",
+      "habitat": "Historical habitat of Lesser stick-nest rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Leporillus_apicalis.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "South Australia",
+          "lat": -30.5343665,
+          "lon": 135.6301212,
+          "display_name": "South Australia, Australia"
+        },
+        {
+          "location": "Territory",
+          "lat": 44.4308975,
+          "lon": -89.6884637,
+          "display_name": "Wisconsin, United States"
+        },
+        {
+          "location": "New South Wales",
+          "lat": -31.8759835,
+          "lon": 147.2869493,
+          "display_name": "New South Wales, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Indefatigable Galápagos mouse",
+      "binomial_name": "Nesoryzomys indefessus (Thomas, 1899)",
+      "description": "Indefatigable Galápagos mouse (Nesoryzomys indefessus (Thomas, 1899)) was an extinct mammal that lived in Ilhas Galápagos, Equador (Ilha Santa Cruz, Ilha Baltra). Extinção: 1930s. Última localização conhecida: Ilha Santa Cruz, Ilha Baltra..",
+      "distribution": "Ilhas Galápagos, Equador (Ilha Santa Cruz, Ilha Baltra). Extinção: 1930s. Última localização conhecida: Ilha Santa Cruz, Ilha Baltra.",
+      "habitat": "Historical habitat of Indefatigable Galápagos mouse included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Nesoryzomys_darwini.jpg",
+      "continent": "América do Sul",
+      "coordinates": [
+        {
+          "location": "América do Sul",
+          "lat": -21.0002179,
+          "lon": -61.0006565,
+          "display_name": "América do Sul;América del Sur"
+        },
+        {
+          "location": "Ilhas Galápagos",
+          "lat": 39.8815668,
+          "lon": 4.254892,
+          "display_name": "Carrer Illes Galápagos, Maó, Menorca, Illes Balears, 07703, España"
+        },
+        {
+          "location": "Equador",
+          "lat": -1.3397668,
+          "lon": -79.3666965,
+          "display_name": "Ecuador"
+        },
+        {
+          "location": "Ilha Santa Cruz",
+          "lat": -0.6893808,
+          "lon": -50.6287451,
+          "display_name": "Ilha Santa Cruz, Breves, Região Geográfica Imediata de Breves, Região Geográfica Intermediária de Breves, Pará, Região Norte, Brasil"
+        }
+      ]
+    },
+    {
+      "common_name": "Blue-gray mouse",
+      "binomial_name": "Pseudomys glaucus",
+      "description": "Blue-gray mouse (Pseudomys glaucus) was an extinct mammal that lived in Queensland, New South Wales. Extinção: 1956. Última localização conhecida: Cryon, New South Wales..",
+      "distribution": "Queensland, New South Wales. Extinção: 1956. Última localização conhecida: Cryon, New South Wales.",
+      "habitat": "Historical habitat of Blue-gray mouse included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Pseudomys_auritus.jpg",
+      "continent": "Australia",
+      "coordinates": [
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Queensland",
+          "lat": -22.1646782,
+          "lon": 144.5844903,
+          "display_name": "Queensland, Australia"
+        },
+        {
+          "location": "New South Wales",
+          "lat": -31.8759835,
+          "lon": 147.2869493,
+          "display_name": "New South Wales, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Buhler's coryphomys",
+      "binomial_name": "Coryphomys buehleri",
+      "description": "Buhler's coryphomys (Coryphomys buehleri) was an extinct mammal that lived in Ilha de Timor, Indonésia (Timor Ocidental Indonésio). Extinção: Sem informação precisa (espécie extinta). Última localização conhecida: Ilha de Timor, Indonésia (cavernas de calcário no Timor Ocidental Indonésio)..",
+      "distribution": "Ilha de Timor, Indonésia (Timor Ocidental Indonésio). Extinção: Sem informação precisa (espécie extinta). Última localização conhecida: Ilha de Timor, Indonésia (cavernas de calcário no Timor Ocidental Indonésio).",
+      "habitat": "Historical habitat of Buhler's coryphomys included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Coryphomys_buehleri.jpg",
+      "continent": "Ásia",
+      "coordinates": [
+        {
+          "location": "Ásia",
+          "lat": 51.2086975,
+          "lon": 89.2343748,
+          "display_name": "Asia"
+        },
+        {
+          "location": "Ilha de Timor",
+          "lat": 38.6124823,
+          "lon": -9.1032702,
+          "display_name": "Sabores da Ilha, Avenida Libertadores de Timor Loro Sae, Torre da Marinha, Seixal, Arrentela e Aldeia de Paio Pires, Seixal, Setúbal, 2840-422, Portugal"
+        },
+        {
+          "location": "Indonésia",
+          "lat": -2.4833826,
+          "lon": 117.8902853,
+          "display_name": "Indonesia"
+        }
+      ]
+    },
+    {
+      "common_name": "Insular cave rat",
+      "binomial_name": "Heteropsomys insulans",
+      "description": "Insular cave rat (Heteropsomys insulans) was an extinct mammal that lived in Puerto Rico. Extinção: After 1500 AD (likely due to European colonization). Última localização conhecida: Puerto Rico..",
+      "distribution": "Puerto Rico. Extinção: After 1500 AD (likely due to European colonization). Última localização conhecida: Puerto Rico.",
+      "habitat": "Historical habitat of Insular cave rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Heteropsomys_insulans.jpeg",
+      "continent": "North America",
+      "coordinates": [
+        {
+          "location": "North America",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "Puerto Rico",
+          "lat": 18.2247706,
+          "lon": -66.4858295,
+          "display_name": "Puerto Rico, United States"
+        }
+      ]
+    },
+    {
+      "common_name": "Rato-candango",
+      "binomial_name": "Juscelinomys candango",
+      "description": "Rato-candango (Juscelinomys candango) was an extinct mammal that lived in Brasil (Distrito Federal, Brasília). Extinção: Início dos anos 1960 (último avistamento em 1960). Última localização conhecida: Região de Brasília, Fundação Zoobotânica do Distrito Federal..",
+      "distribution": "Brasil (Distrito Federal, Brasília). Extinção: Início dos anos 1960 (último avistamento em 1960). Última localização conhecida: Região de Brasília, Fundação Zoobotânica do Distrito Federal.",
+      "habitat": "Historical habitat of Rato-candango included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Juscelinomys_candango.jpg",
+      "continent": "América do Sul",
+      "coordinates": [
+        {
+          "location": "América do Sul",
+          "lat": -21.0002179,
+          "lon": -61.0006565,
+          "display_name": "América do Sul;América del Sur"
+        },
+        {
+          "location": "Brasil",
+          "lat": -10.3333333,
+          "lon": -53.2,
+          "display_name": "Brasil"
+        },
+        {
+          "location": "Distrito Federal",
+          "lat": -15.7754462,
+          "lon": -47.7970891,
+          "display_name": "Distrito Federal, Região Centro-Oeste, Brasil"
+        },
+        {
+          "location": "Brasília",
+          "lat": -10.3333333,
+          "lon": -53.2,
+          "display_name": "Brasil"
+        }
+      ]
+    },
+    {
+      "common_name": "Vespucci's rodent",
+      "binomial_name": "Noronhomys vespuccii",
+      "description": "Vespucci's rodent (Noronhomys vespuccii) was an extinct mammal that lived in Fernando de Noronha, Brazil. Extinção: c. 1503. Última localização conhecida: Fernando de Noronha..",
+      "distribution": "Fernando de Noronha, Brazil. Extinção: c. 1503. Última localização conhecida: Fernando de Noronha.",
+      "habitat": "Historical habitat of Vespucci's rodent included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Noronhomys_vespuccii.jpeg",
+      "continent": "South America",
+      "coordinates": [
+        {
+          "location": "South America",
+          "lat": -21.0002179,
+          "lon": -61.0006565,
+          "display_name": "América do Sul;América del Sur"
+        },
+        {
+          "location": "Fernando de Noronha",
+          "lat": -3.8537498,
+          "lon": -32.4198018,
+          "display_name": "Fernando de Noronha, Região Geográfica Imediata do Recife, Pernambuco, Região Nordeste, 53990-000, Brasil"
+        },
+        {
+          "location": "Brazil",
+          "lat": -10.3333333,
+          "lon": -53.2,
+          "display_name": "Brasil"
+        }
+      ]
+    },
+    {
+      "common_name": "St. Vincent pygmy rice rat",
+      "binomial_name": "Oligoryzomys victus",
+      "description": "St. Vincent pygmy rice rat (Oligoryzomys victus) was an extinct mammal that lived in Saint Vincent (Lesser Antilles), Saint Vincent and the Grenadines. Extinção: c. 1892. Última localização conhecida: Saint Vincent..",
+      "distribution": "Saint Vincent (Lesser Antilles), Saint Vincent and the Grenadines. Extinção: c. 1892. Última localização conhecida: Saint Vincent.",
+      "habitat": "Historical habitat of St. Vincent pygmy rice rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Oligoryzomys_victus.jpeg",
+      "continent": "América do Norte",
+      "coordinates": [
+        {
+          "location": "América do Norte",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "Saint Vincent",
+          "lat": 12.90447,
+          "lon": -61.2765569,
+          "display_name": "Saint Vincent and the Grenadines"
+        },
+        {
+          "location": "Lesser Antilles",
+          "lat": 10.4402467,
+          "lon": -61.2611986,
+          "display_name": "Antillas Menores / Lesser Antilles, Trinidad and Tobago"
+        }
+      ]
+    },
+    {
+      "common_name": "Jamaican rice rat",
+      "binomial_name": "Oryzomys antillarum",
+      "description": "Jamaican rice rat (Oryzomys antillarum) was an extinct mammal that lived in Jamaica. Extinção: late 19th century (around 1870s). Última localização conhecida: Jamaica..",
+      "distribution": "Jamaica. Extinção: late 19th century (around 1870s). Última localização conhecida: Jamaica.",
+      "habitat": "Historical habitat of Jamaican rice rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Megaoryzomys_curioi.jpg",
+      "continent": "North America (Caribbean)",
+      "coordinates": [
+        {
+          "location": "Jamaica",
+          "lat": 18.1850507,
+          "lon": -77.3947693,
+          "display_name": "Jamaica"
+        }
+      ]
+    },
+    {
+      "common_name": "Rato-do-arroz-de-Nelson",
+      "binomial_name": "Oryzomys nelsoni",
+      "description": "Rato-do-arroz-de-Nelson (Oryzomys nelsoni) was an extinct mammal that lived in Ilha María Madre, Nayarit, México. Extinção: Após maio de 1897. Última localização conhecida: Ilha María Madre, Nayarit, México (localidade \"Sacatal\" perto de uma nascente)..",
+      "distribution": "Ilha María Madre, Nayarit, México. Extinção: Após maio de 1897. Última localização conhecida: Ilha María Madre, Nayarit, México (localidade \"Sacatal\" perto de uma nascente).",
+      "habitat": "Historical habitat of Rato-do-arroz-de-Nelson included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Megaoryzomys_curioi.jpg",
+      "continent": "América do Norte",
+      "coordinates": [
+        {
+          "location": "América do Norte",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "Ilha María Madre",
+          "lat": -12.7334066,
+          "lon": -38.6335742,
+          "display_name": "Ilha Maria Guarda, Madre de Deus, Região Geográfica Imediata de Salvador, Região Metropolitana de Salvador, Região Geográfica Intermediária de Salvador, Bahia, Região Nordeste, Brasil"
+        },
+        {
+          "location": "Nayarit",
+          "lat": 22.0000001,
+          "lon": -105.0000001,
+          "display_name": "Nayarit, México"
+        },
+        {
+          "location": "México",
+          "lat": 23.6585116,
+          "lon": -102.0077097,
+          "display_name": "México"
+        }
+      ]
+    },
+    {
+      "common_name": "Christmas Island pipistrelle",
+      "binomial_name": "Pipistrellus murrayi",
+      "description": "Christmas Island pipistrelle (Pipistrellus murrayi) was an extinct mammal that lived in Christmas Island, Australia. Extinção: August 2009. Última localização conhecida: Christmas Island..",
+      "distribution": "Christmas Island, Australia. Extinção: August 2009. Última localização conhecida: Christmas Island.",
+      "habitat": "Historical habitat of Christmas Island pipistrelle included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Pipistrellus_murrayi.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Christmas Island",
+          "lat": -10.4837768,
+          "lon": 105.64723,
+          "display_name": "Christmas Island, Australia"
+        },
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Sardinian pika",
+      "binomial_name": "Prolagus sardus (Wagner, 1829)",
+      "description": "Sardinian pika (Prolagus sardus (Wagner, 1829)) was an extinct mammal that lived in Corsica, Sardinia, Tavolara (debated). Extinção: Between 393 BC and 6th century AD (main islands); possibly 18th century (Tavolara, debated). Última localização conhecida: Corsica and Sardinia archipelago (Western Mediterranean)..",
+      "distribution": "Corsica, Sardinia, Tavolara (debated). Extinção: Between 393 BC and 6th century AD (main islands); possibly 18th century (Tavolara, debated). Última localização conhecida: Corsica and Sardinia archipelago (Western Mediterranean).",
+      "habitat": "Historical habitat of Sardinian pika included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Prolagus_sardus.jpg",
+      "continent": "Europe",
+      "coordinates": [
+        {
+          "location": "Europe",
+          "lat": 51.0,
+          "lon": 10.0,
+          "display_name": "Europe"
+        },
+        {
+          "location": "Corsica",
+          "lat": 42.188098,
+          "lon": 9.0683139,
+          "display_name": "Corse, France métropolitaine, France"
+        },
+        {
+          "location": "Sardinia",
+          "lat": 40.0912813,
+          "lon": 9.0305773,
+          "display_name": "Sardigna/Sardegna, Italia"
+        },
+        {
+          "location": "Tavolara",
+          "lat": 40.9077866,
+          "lon": 9.7170299,
+          "display_name": "Tavolara, Olbia, Gallura Nord-Est Sardegna, Sardigna/Sardegna, 07026, Italia"
+        }
+      ]
+    },
+    {
+      "common_name": "Solenodonte de Marcano",
+      "binomial_name": "Solenodon marcanoi",
+      "description": "Solenodonte de Marcano (Solenodon marcanoi) was an extinct mammal that lived in República Dominicana, Haiti (na ilha de Hispaniola). Extinção: Após 1500 CE (últimos 500 anos, após a colonização europeia). Última localização conhecida: Ilha de Hispaniola (República Dominicana e Haiti)..",
+      "distribution": "República Dominicana, Haiti (na ilha de Hispaniola). Extinção: Após 1500 CE (últimos 500 anos, após a colonização europeia). Última localização conhecida: Ilha de Hispaniola (República Dominicana e Haiti).",
+      "habitat": "Historical habitat of Solenodonte de Marcano included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Solenodon_marcanoi.jpg",
+      "continent": "América do Norte (Caribe/Grandes Antilhas)",
+      "coordinates": [
+        {
+          "location": "República Dominicana",
+          "lat": 19.0974031,
+          "lon": -70.3028026,
+          "display_name": "República Dominicana"
+        },
+        {
+          "location": "Haiti",
+          "lat": 19.1399952,
+          "lon": -72.3570972,
+          "display_name": "Ayiti"
+        }
+      ]
+    },
+    {
+      "common_name": "Nesofonte-de-Porto-Rico",
+      "binomial_name": "Nesophontes edithae",
+      "description": "Nesofonte-de-Porto-Rico (Nesophontes edithae) was an extinct mammal that lived in Porto Rico (ilha principal), Vieques, Ilhas Virgens Americanas (São João, São Tomás). Extinção: Século XVI (aproximadamente 1500s). Última localização conhecida: Porto Rico e Ilhas Virgens Americanas..",
+      "distribution": "Porto Rico (ilha principal), Vieques, Ilhas Virgens Americanas (São João, São Tomás). Extinção: Século XVI (aproximadamente 1500s). Última localização conhecida: Porto Rico e Ilhas Virgens Americanas.",
+      "habitat": "Historical habitat of Nesofonte-de-Porto-Rico included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Nesophontes_edithae.jpg",
+      "continent": "América do Norte",
+      "coordinates": [
+        {
+          "location": "América do Norte",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "Porto Rico",
+          "lat": 18.2247706,
+          "lon": -66.4858295,
+          "display_name": "Puerto Rico, United States"
+        },
+        {
+          "location": "ilha principal",
+          "lat": -23.8904524,
+          "lon": -46.4415578,
+          "display_name": "Principal, Vila Sítio dos Queirozes, Cubatão, Região Imediata de Santos, Região Metropolitana da Baixada Santista, Região Geográfica Intermediária de São Paulo, São Paulo, Região Sudeste, 11510-160, Brasil"
+        },
+        {
+          "location": "Vieques",
+          "lat": 18.1215622,
+          "lon": -65.457464,
+          "display_name": "Vieques, Puerto Rico, 00765, United States"
+        },
+        {
+          "location": "São João",
+          "lat": 47.5646794,
+          "lon": -52.7066964,
+          "display_name": "St. John's, Newfoundland, Newfoundland and Labrador, Canada"
+        }
+      ]
+    },
+    {
+      "common_name": "Atalaye nesophontes",
+      "binomial_name": "Nesophontes hypomicrus",
+      "description": "Atalaye nesophontes (Nesophontes hypomicrus) was an extinct mammal that lived in Haiti, Dominican Republic (Hispaniola), Gonâve Island. Extinção: Após o contato europeu (cerca de 500 anos atrás), com datação mais recente entre 1175–1295 CE, mas acredita-se que foi extinto após a chegada dos europeus.. Última localização conhecida: Hispaniola (Haiti e República Dominicana), Ilha Gonâve..",
+      "distribution": "Haiti, Dominican Republic (Hispaniola), Gonâve Island. Extinção: Após o contato europeu (cerca de 500 anos atrás), com datação mais recente entre 1175–1295 CE, mas acredita-se que foi extinto após a chegada dos europeus.. Última localização conhecida: Hispaniola (Haiti e República Dominicana), Ilha Gonâve.",
+      "habitat": "Historical habitat of Atalaye nesophontes included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Nesophontes_edithae.jpg",
+      "continent": "América do Norte",
+      "coordinates": [
+        {
+          "location": "Caverna Atalaye - St. Michel (Haiti)",
+          "lat": 19.5667,
+          "lon": -72.1167
+        },
+        {
+          "location": "Trouing Jean Paul (Haiti)",
+          "lat": 19.3333,
+          "lon": -72.3333
+        },
+        {
+          "location": "Ilha Gonâve - Anse-à-Galets (Haiti)",
+          "lat": 18.8333,
+          "lon": -73.0833
+        },
+        {
+          "location": "Port-au-Prince region (Haiti)",
+          "lat": 18.5944,
+          "lon": -72.3074
+        },
+        {
+          "location": "Cerro de San Francisco (República Dominicana)",
+          "lat": 18.4861,
+          "lon": -69.9312
+        },
+        {
+          "location": "Cueva Jurg - Pedernales (República Dominicana)",
+          "lat": 18.0333,
+          "lon": -71.7333
+        },
+        {
+          "location": "Santo Domingo region (República Dominicana)",
+          "lat": 18.4861,
+          "lon": -69.9312
+        },
+        {
+          "location": "Cordilheira Central (Hispaniola)",
+          "lat": 19.0,
+          "lon": -71.0
+        }
+      ]
+    },
+    {
+      "common_name": "Greater Cuban nesophontes",
+      "binomial_name": "Nesophontes major",
+      "description": "Greater Cuban nesophontes (Nesophontes major) was an extinct mammal that lived in Cuba. Extinção: 1500s. Última localização conhecida: Cuba..",
+      "distribution": "Cuba. Extinção: 1500s. Última localização conhecida: Cuba.",
+      "habitat": "Historical habitat of Greater Cuban nesophontes included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Nesophontes_edithae.jpg",
+      "continent": "North America",
+      "coordinates": [
+        {
+          "location": "North America",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "Cuba",
+          "lat": 23.0131338,
+          "lon": -80.8328748,
+          "display_name": "Cuba"
+        }
+      ]
+    },
+    {
+      "common_name": "Western Cuban nesophontes",
+      "binomial_name": "Nesophontes micrus",
+      "description": "Western Cuban nesophontes (Nesophontes micrus) was an extinct mammal that lived in Cuba, Hispaniola. Extinção: 1500s. Última localização conhecida: Not specified beyond Cuba and Hispaniola..",
+      "distribution": "Cuba, Hispaniola. Extinção: 1500s. Última localização conhecida: Not specified beyond Cuba and Hispaniola.",
+      "habitat": "Historical habitat of Western Cuban nesophontes included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Nesophontes_edithae.jpg",
+      "continent": "North America (Caribbean)",
+      "coordinates": [
+        {
+          "location": "Cuba",
+          "lat": 23.0131338,
+          "lon": -80.8328748,
+          "display_name": "Cuba"
+        },
+        {
+          "location": "Hispaniola",
+          "lat": 18.7785812,
+          "lon": -70.5427698,
+          "display_name": "La Hispaniola, República Dominicana"
+        }
+      ]
+    },
+    {
+      "common_name": "St. Michel nesophontes",
+      "binomial_name": "Nesophontes paramicrus",
+      "description": "St. Michel nesophontes (Nesophontes paramicrus) was an extinct mammal that lived in Hispaniola (Haiti, República Dominicana). Extinção: Início ou final do século XVI (1500s). Última localização conhecida: Cueva de Bosque Humido, Parque Nacional Los Haitises, Província de Hato Mayor, República Dominicana..",
+      "distribution": "Hispaniola (Haiti, República Dominicana). Extinção: Início ou final do século XVI (1500s). Última localização conhecida: Cueva de Bosque Humido, Parque Nacional Los Haitises, Província de Hato Mayor, República Dominicana.",
+      "habitat": "Historical habitat of St. Michel nesophontes included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Nesophontes_edithae.jpg",
+      "continent": "América do Norte (Grandes Antilhas)",
+      "coordinates": [
+        {
+          "location": "Hispaniola",
+          "lat": 18.7785812,
+          "lon": -70.5427698,
+          "display_name": "La Hispaniola, República Dominicana"
+        },
+        {
+          "location": "Haiti",
+          "lat": 19.1399952,
+          "lon": -72.3570972,
+          "display_name": "Ayiti"
+        },
+        {
+          "location": "República Dominicana",
+          "lat": 19.0974031,
+          "lon": -70.3028026,
+          "display_name": "República Dominicana"
+        }
+      ]
+    },
+    {
+      "common_name": "Haitian nesophontes",
+      "binomial_name": "Nesophontes zamicrus",
+      "description": "Haitian nesophontes (Nesophontes zamicrus) was an extinct mammal that lived in Hispaniola (Dominican Republic, Haiti). Extinção: Shortly after European arrival (~500 years ago). Última localização conhecida: Hispaniola (Haiti, specifically near St. Michel, Atalaya plantation cave)..",
+      "distribution": "Hispaniola (Dominican Republic, Haiti). Extinção: Shortly after European arrival (~500 years ago). Última localização conhecida: Hispaniola (Haiti, specifically near St. Michel, Atalaya plantation cave).",
+      "habitat": "Historical habitat of Haitian nesophontes included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Nesophontes_edithae.jpg",
+      "continent": "North America",
+      "coordinates": [
+        {
+          "location": "North America",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "Hispaniola",
+          "lat": 18.7785812,
+          "lon": -70.5427698,
+          "display_name": "La Hispaniola, República Dominicana"
+        },
+        {
+          "location": "Dominican Republic",
+          "lat": 19.0974031,
+          "lon": -70.3028026,
+          "display_name": "República Dominicana"
+        },
+        {
+          "location": "Haiti",
+          "lat": 19.1399952,
+          "lon": -72.3570972,
+          "display_name": "Ayiti"
+        }
+      ]
+    },
+    {
+      "common_name": "Raposa-voadora-das-mascarenhas-menores",
+      "binomial_name": "Pteropus subniger",
+      "description": "Raposa-voadora-das-mascarenhas-menores (Pteropus subniger) was an extinct mammal that lived in Maurício, Reunião (Ilhas Mascarenhas). Extinção: Entre 1864 e 1873. Última localização conhecida: Ilhas Maurício e Reunião..",
+      "distribution": "Maurício, Reunião (Ilhas Mascarenhas). Extinção: Entre 1864 e 1873. Última localização conhecida: Ilhas Maurício e Reunião.",
+      "habitat": "Historical habitat of Raposa-voadora-das-mascarenhas-menores included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Pteropus_allenorum.jpg",
+      "continent": "África",
+      "coordinates": [
+        {
+          "location": "África",
+          "lat": 11.5024338,
+          "lon": 17.7578122,
+          "display_name": "Afrika / أفريقيا"
+        },
+        {
+          "location": "Maurício",
+          "lat": -20.2759451,
+          "lon": 57.5703566,
+          "display_name": "Mauritius / Maurice"
+        },
+        {
+          "location": "Reunião",
+          "lat": -21.1309332,
+          "lon": 55.5265771,
+          "display_name": "La Réunion, France"
+        },
+        {
+          "location": "Ilhas Mascarenhas",
+          "lat": -21.1307379,
+          "lon": 55.5364801,
+          "display_name": "Mascareignes, La Réunion, France"
+        }
+      ]
+    },
+    {
+      "common_name": "Guam flying fox",
+      "binomial_name": "Pteropus tokudae",
+      "description": "Guam flying fox (Pteropus tokudae) was an extinct mammal that lived in Guam, Marianas Islands, Micronesia. Extinção: Last seen 1967, declared extinct in the wild 1976, IUCN Red List declared extinct 2004, delisted effective November 2023. Última localização conhecida: Tarague cliff, Guam..",
+      "distribution": "Guam, Marianas Islands, Micronesia. Extinção: Last seen 1967, declared extinct in the wild 1976, IUCN Red List declared extinct 2004, delisted effective November 2023. Última localização conhecida: Tarague cliff, Guam.",
+      "habitat": "Historical habitat of Guam flying fox included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Pteropus_allenorum.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Guam",
+          "lat": 13.4499943,
+          "lon": 144.7651677,
+          "display_name": "Guam, United States"
+        },
+        {
+          "location": "Marianas Islands",
+          "lat": 13.4501175,
+          "lon": 144.7577088,
+          "display_name": "Mariana Islands, Chalan Pago-Ordot Municipality, Guam, United States"
+        },
+        {
+          "location": "Micronesia",
+          "lat": 8.6062347,
+          "lon": 151.8327443,
+          "display_name": "Micronesia"
+        }
+      ]
+    },
+    {
+      "common_name": "Dusky flying fox",
+      "binomial_name": "Pteropus brunneus",
+      "description": "Dusky flying fox (Pteropus brunneus) was an extinct mammal that lived in Percy Island, Queensland, Australia. Extinção: 1874 (aproximado). Última localização conhecida: Percy Island..",
+      "distribution": "Percy Island, Queensland, Australia. Extinção: 1874 (aproximado). Última localização conhecida: Percy Island.",
+      "habitat": "Historical habitat of Dusky flying fox included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Pteropus_allenorum.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Percy Island",
+          "lat": 50.8229806,
+          "lon": -126.9491122,
+          "display_name": "Percy Island, Area A (Seymour Inlet/Knight Inlet), Regional District of Mount Waddington, British Columbia, Canada"
+        },
+        {
+          "location": "Queensland",
+          "lat": -22.1646782,
+          "lon": 144.5844903,
+          "display_name": "Queensland, Australia"
+        },
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Large Palau flying fox",
+      "binomial_name": "Pteropus pilosus",
+      "description": "Large Palau flying fox (Pteropus pilosus) was an extinct mammal that lived in Palau Islands. Extinção: c. 1874. Última localização conhecida: Palau Islands..",
+      "distribution": "Palau Islands. Extinção: c. 1874. Última localização conhecida: Palau Islands.",
+      "habitat": "Historical habitat of Large Palau flying fox included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Pteropus_allenorum.jpg",
+      "continent": "Oceania (Micronesia)",
+      "coordinates": [
+        {
+          "location": "Palau Islands",
+          "lat": 7.53902,
+          "lon": 134.5671064,
+          "display_name": "Palau Islands, Ngeremlengui, Belau"
+        }
+      ]
+    },
+    {
+      "common_name": "Large sloth lemur",
+      "binomial_name": "Palaeopropithecus ingens",
+      "description": "Large sloth lemur (Palaeopropithecus ingens) was an extinct mammal that lived in Madagascar. Extinção: c. 1500-1620 CE. Última localização conhecida: Madagascar..",
+      "distribution": "Madagascar. Extinção: c. 1500-1620 CE. Última localização conhecida: Madagascar.",
+      "habitat": "Historical habitat of Large sloth lemur included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Primates",
+      "image_filename": "Palaeopropithecus_ingens.png",
+      "continent": "Africa (Madagascar)",
+      "coordinates": [
+        {
+          "location": "Africa (Madagascar)",
+          "lat": -18.7901013,
+          "lon": 47.5825505,
+          "display_name": "Farming & Technology for Africa (FTA), Antanambao, Ambohidrabiby, District d'Antananarivo Avaradrano, Analamanga, Province d’Antananarivo, Madagasikara / Madagascar"
+        },
+        {
+          "location": "Madagascar",
+          "lat": -18.9249604,
+          "lon": 46.4416422,
+          "display_name": "Madagasikara / Madagascar"
+        }
+      ]
+    },
+    {
+      "common_name": "Bluebuck",
+      "binomial_name": "Hippotragus leucophaeus",
+      "description": "Bluebuck (Hippotragus leucophaeus) was an extinct mammal that lived in South Africa (southwestern Cape, coastal plain from Oakhurst to Uniondale). Extinção: 1799 or 1800. Última localização conhecida: Southwestern Cape, South Africa..",
+      "distribution": "South Africa (southwestern Cape, coastal plain from Oakhurst to Uniondale). Extinção: 1799 or 1800. Última localização conhecida: Southwestern Cape, South Africa.",
+      "habitat": "Historical habitat of Bluebuck included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Hippotragus_leucophaeus.jpg",
+      "continent": "Africa",
+      "coordinates": [
+        {
+          "location": "Africa",
+          "lat": 11.5024338,
+          "lon": 17.7578122,
+          "display_name": "Afrika / أفريقيا"
+        },
+        {
+          "location": "South Africa",
+          "lat": -28.8166236,
+          "lon": 24.991639,
+          "display_name": "South Africa"
+        },
+        {
+          "location": "southwestern Cape",
+          "lat": 45.1238497,
+          "lon": -81.3184935,
+          "display_name": "Cape Chin North, Municipality of Northern Bruce Peninsula, Bruce County, Southwestern Ontario, Ontario, Canada"
+        }
+      ]
+    },
+    {
+      "common_name": "Cervo de Schomburgk",
+      "binomial_name": "Rucervus schomburgki",
+      "description": "Cervo de Schomburgk (Rucervus schomburgki) was an extinct mammal that lived in Tailândia (central, vale do rio Chao Phraya, perto de Bangkok), Laos (província de Phongsali - evidência de sobrevivência em 1991). Extinção: População selvagem extinta em 1932; último indivíduo em cativeiro morto em 1938. Listado como extinto na Lista Vermelha da IUCN em 2006.. Última localização conhecida: Samut Sakhon, Tailândia (último indivíduo em cativeiro)..",
+      "distribution": "Tailândia (central, vale do rio Chao Phraya, perto de Bangkok), Laos (província de Phongsali - evidência de sobrevivência em 1991). Extinção: População selvagem extinta em 1932; último indivíduo em cativeiro morto em 1938. Listado como extinto na Lista Vermelha da IUCN em 2006.. Última localização conhecida: Samut Sakhon, Tailândia (último indivíduo em cativeiro).",
+      "habitat": "Historical habitat of Cervo de Schomburgk included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Rucervus_schomburgki.jpg",
+      "continent": "Ásia",
+      "coordinates": [
+        {
+          "location": "Ásia",
+          "lat": 51.2086975,
+          "lon": 89.2343748,
+          "display_name": "Asia"
+        },
+        {
+          "location": "Tailândia",
+          "lat": -2.936096,
+          "lon": -48.9523366,
+          "display_name": "Tailândia, Região Geográfica Imediata de Abaetetuba, Região Geográfica Intermediária de Belém, Pará, Região Norte, 68695-000, Brasil"
+        },
+        {
+          "location": "perto de Bangkok",
+          "lat": -31.9487419,
+          "lon": 115.8582652,
+          "display_name": "Bangkok Brothers, 91, James Street, Northbridge, Perth, City of Perth, Western Australia, 6003, Australia"
+        },
+        {
+          "location": "Laos",
+          "lat": 20.0171109,
+          "lon": 103.378253,
+          "display_name": "ປະເທດລາວ"
+        }
+      ]
+    },
+    {
+      "common_name": "Queen of Sheba's gazelle",
+      "binomial_name": "Gazella bilkis",
+      "description": "Queen of Sheba's gazelle (Gazella bilkis) was an extinct mammal that lived in Yemen. Extinção: 1951. Última localização conhecida: Mountains near Ta'izz, Yemen..",
+      "distribution": "Yemen. Extinção: 1951. Última localização conhecida: Mountains near Ta'izz, Yemen.",
+      "habitat": "Historical habitat of Queen of Sheba's gazelle included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Gazella_bilkis.jpg",
+      "continent": "Asia",
+      "coordinates": [
+        {
+          "location": "Asia",
+          "lat": 51.2086975,
+          "lon": 89.2343748,
+          "display_name": "Asia"
+        },
+        {
+          "location": "Yemen",
+          "lat": 16.3471243,
+          "lon": 47.8915271,
+          "display_name": "اليمن"
+        }
+      ]
+    },
+    {
+      "common_name": "Madagascan dwarf hippopotamus",
+      "binomial_name": "Hippopotamus lemerlei",
+      "description": "Madagascan dwarf hippopotamus (Hippopotamus lemerlei) was an extinct mammal that lived in Madagascar (Ambolisaka, Lake Ihotry, Mozambique Channel). Extinção: After 1500 AD (recently extinct, IUCN classification); bones dated to ~1000 years ago (980±200 radiocarbon years BP). Última localização conhecida: Ambolisaka, near Lake Ihotry, Madagascar..",
+      "distribution": "Madagascar (Ambolisaka, Lake Ihotry, Mozambique Channel). Extinção: After 1500 AD (recently extinct, IUCN classification); bones dated to ~1000 years ago (980±200 radiocarbon years BP). Última localização conhecida: Ambolisaka, near Lake Ihotry, Madagascar.",
+      "habitat": "Historical habitat of Madagascan dwarf hippopotamus included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Hippopotamus_madagascariensis.jpg",
+      "continent": "Africa",
+      "coordinates": [
+        {
+          "location": "Africa",
+          "lat": 11.5024338,
+          "lon": 17.7578122,
+          "display_name": "Afrika / أفريقيا"
+        },
+        {
+          "location": "Madagascar",
+          "lat": -18.9249604,
+          "lon": 46.4416422,
+          "display_name": "Madagasikara / Madagascar"
+        },
+        {
+          "location": "Lake Ihotry",
+          "lat": -22.098875,
+          "lon": 43.402233,
+          "display_name": "Ihotry, Morombe, Atsimo-Andrefana, Province de Toliara, Madagasikara / Madagascar"
+        },
+        {
+          "location": "Mozambique Channel",
+          "lat": -18.6643244,
+          "lon": 40.3065964,
+          "display_name": "Canal de Moçambique / canal du Mozambique"
+        }
+      ]
+    },
+    {
+      "common_name": "Argentinean Warrah",
+      "binomial_name": "Dusicyon avus",
+      "description": "Argentinean Warrah (Dusicyon avus) was an extinct mammal that lived in Argentina (Pampas, Patagônia, Província de Buenos Aires), Brasil (Formação Chuí), Chile (Cueva del Milodón), Uruguai (Formação Sopas). Extinção: Entre 1232-1397 d.C. (Região Pampeana) e 1454-1626 d.C. (Patagônia Meridional). Última localização conhecida: Região Pampeana e Patagônia Meridional..",
+      "distribution": "Argentina (Pampas, Patagônia, Província de Buenos Aires), Brasil (Formação Chuí), Chile (Cueva del Milodón), Uruguai (Formação Sopas). Extinção: Entre 1232-1397 d.C. (Região Pampeana) e 1454-1626 d.C. (Patagônia Meridional). Última localização conhecida: Região Pampeana e Patagônia Meridional.",
+      "habitat": "Historical habitat of Argentinean Warrah included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Dusicyon_australis.jpg",
+      "continent": "América do Sul",
+      "coordinates": [
+        {
+          "location": "Pampas - Buenos Aires (Argentina)",
+          "lat": -34.6037,
+          "lon": -58.3816
+        },
+        {
+          "location": "Pampas - Santa Fe (Argentina)",
+          "lat": -31.6333,
+          "lon": -60.7
+        },
+        {
+          "location": "Pampas - Córdoba (Argentina)",
+          "lat": -31.4201,
+          "lon": -64.1888
+        },
+        {
+          "location": "Patagônia - Chubut (Argentina)",
+          "lat": -43.3,
+          "lon": -65.1
+        },
+        {
+          "location": "Patagônia - Santa Cruz (Argentina)",
+          "lat": -50.3375,
+          "lon": -72.2615
+        },
+        {
+          "location": "Rio Grande do Sul - Formação Chuí (Brasil)",
+          "lat": -33.5156,
+          "lon": -53.3653
+        },
+        {
+          "location": "Última Esperanza - Cueva del Milodón (Chile)",
+          "lat": -51.5772,
+          "lon": -72.6089
+        },
+        {
+          "location": "Magallanes - Fell's Cave (Chile)",
+          "lat": -52.5833,
+          "lon": -69.2167
+        },
+        {
+          "location": "Soriano - Mercedes (Uruguai)",
+          "lat": -33.2528,
+          "lon": -58.0306
+        },
+        {
+          "location": "Colonia - Colonia del Sacramento (Uruguai)",
+          "lat": -34.4628,
+          "lon": -57.8397
+        }
+      ]
+    },
+    {
+      "common_name": "Lord Howe long-eared bat",
+      "binomial_name": "Nyctophilus howensis",
+      "description": "Lord Howe long-eared bat (Nyctophilus howensis) was an extinct mammal that lived in Lord Howe Island, New South Wales, Australia. Extinção: Extinto (IUCN 3.1), conhecido apenas por um crânio encontrado em 1972 e datado do século XX. Pode ter se extinguido antes de 1500 d.C. ou muito recentemente.. Última localização conhecida: Lord Howe Island..",
+      "distribution": "Lord Howe Island, New South Wales, Australia. Extinção: Extinto (IUCN 3.1), conhecido apenas por um crânio encontrado em 1972 e datado do século XX. Pode ter se extinguido antes de 1500 d.C. ou muito recentemente.. Última localização conhecida: Lord Howe Island.",
+      "habitat": "Historical habitat of Lord Howe long-eared bat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Chiroptera",
+      "image_filename": "Nyctophilus_howensis.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Lord Howe Island",
+          "lat": -31.5540166,
+          "lon": 159.0856256,
+          "display_name": "Lord Howe Island, Unincorporated New South Wales, New South Wales, 2898, Australia"
+        },
+        {
+          "location": "New South Wales",
+          "lat": -31.8759835,
+          "lon": 147.2869493,
+          "display_name": "New South Wales, Australia"
+        },
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Sea mink",
+      "binomial_name": "Neogale macrodon",
+      "description": "Sea mink (Neogale macrodon) was an extinct mammal that lived in Canada (New Brunswick, Newfoundland I, Nova Scotia); United States (Maine, Massachusetts, possibly Connecticut and Rhode Island). Extinção: Late 19th or early 20th century (specifically 1894). Última localização conhecida: Coast of Maine, Bay of Fundy (Gulf of Maine)..",
+      "distribution": "Canada (New Brunswick, Newfoundland I, Nova Scotia); United States (Maine, Massachusetts, possibly Connecticut and Rhode Island). Extinção: Late 19th or early 20th century (specifically 1894). Última localização conhecida: Coast of Maine, Bay of Fundy (Gulf of Maine).",
+      "habitat": "Historical habitat of Sea mink included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "neogale_macrodon.jpg",
+      "continent": "North America",
+      "coordinates": [
+        {
+          "location": "North America",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "Canada",
+          "lat": 61.0666922,
+          "lon": -107.991707,
+          "display_name": "Canada"
+        },
+        {
+          "location": "New Brunswick",
+          "lat": 46.500283,
+          "lon": -66.750183,
+          "display_name": "New Brunswick / Nouveau-Brunswick, Canada"
+        },
+        {
+          "location": "Newfoundland I",
+          "lat": 53.8471883,
+          "lon": -56.9438564,
+          "display_name": "Prisoners Island, Labrador, Newfoundland and Labrador, Canada"
+        },
+        {
+          "location": "Nova Scotia",
+          "lat": 45.1960403,
+          "lon": -63.1653789,
+          "display_name": "Nova Scotia, Canada"
+        }
+      ]
+    },
+    {
+      "common_name": "Nevis rice rat",
+      "binomial_name": "Pennatomys nivalis",
+      "description": "Nevis rice rat (Pennatomys nivalis) was an extinct mammal that lived in Sint Eustatius, Saint Kitts, Nevis. Extinção: Entre 900 e 1200 CE (últimos registros arqueológicos), com relatos anedóticos até a década de 1930. Extinto antes de 2009.. Última localização conhecida: Nevis..",
+      "distribution": "Sint Eustatius, Saint Kitts, Nevis. Extinção: Entre 900 e 1200 CE (últimos registros arqueológicos), com relatos anedóticos até a década de 1930. Extinto antes de 2009.. Última localização conhecida: Nevis.",
+      "habitat": "Historical habitat of Nevis rice rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Pennatomys_nivalis.jpg",
+      "continent": "América do Norte",
+      "coordinates": [
+        {
+          "location": "América do Norte",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "Sint Eustatius",
+          "lat": 17.5085293,
+          "lon": -62.9954769,
+          "display_name": "Sint Eustatius, Nederland"
+        },
+        {
+          "location": "Saint Kitts",
+          "lat": 17.250512,
+          "lon": -62.6725973,
+          "display_name": "Saint Kitts and Nevis"
+        },
+        {
+          "location": "Nevis",
+          "lat": 17.1508813,
+          "lon": -62.5852896,
+          "display_name": "Nevis, Saint John Figtree, Nevis, Saint Kitts and Nevis"
+        }
+      ]
+    },
+    {
+      "common_name": "Sturdee's pipistrelle",
+      "binomial_name": "Pipistrellus sturdeei",
+      "description": "Sturdee's pipistrelle (Pipistrellus sturdeei) was an extinct mammal that lived in Japan (Haha-jima Island, Bonin Islands, Ogasawara-shoto). Extinção: Last seen in 1889; declared extinct between 1996 and 2004 (Wikipedia) / Assessed as Extinct (EX) on 31 August 2018 (IUCN Red List). Última localização conhecida: Haha-jima Island, Bonin Islands, Japan..",
+      "distribution": "Japan (Haha-jima Island, Bonin Islands, Ogasawara-shoto). Extinção: Last seen in 1889; declared extinct between 1996 and 2004 (Wikipedia) / Assessed as Extinct (EX) on 31 August 2018 (IUCN Red List). Última localização conhecida: Haha-jima Island, Bonin Islands, Japan.",
+      "habitat": "Historical habitat of Sturdee's pipistrelle included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Pipistrellus_murrayi.jpg",
+      "continent": "Asia",
+      "coordinates": [
+        {
+          "location": "Asia",
+          "lat": 51.2086975,
+          "lon": 89.2343748,
+          "display_name": "Asia"
+        },
+        {
+          "location": "Japan",
+          "lat": 36.5748441,
+          "lon": 139.2394179,
+          "display_name": "日本"
+        },
+        {
+          "location": "Haha-jima Island",
+          "lat": 26.6608939,
+          "lon": 142.1561035,
+          "display_name": "母島, 東京都, 日本"
+        },
+        {
+          "location": "Bonin Islands",
+          "lat": 24.78033,
+          "lon": 141.3205867,
+          "display_name": "小笠原群島, 日本"
+        }
+      ]
+    },
+    {
+      "common_name": "Desert Bettong",
+      "binomial_name": "Bettongia anhydra",
+      "description": "Desert Bettong (Bettongia anhydra) was an extinct mammal that lived in Austrália (Território do Norte, Austrália Ocidental). Extinção: Desconhecida, possivelmente entre 1950 e 1960. Última localização conhecida: McEwin Hills, área do Lago Mackay, Austrália Central (local de coleta do único espécime moderno em 1933). Material subfóssil também encontrado em Stegamite Cave, planície de Nullarbor do sul, Austrália Ocidental...",
+      "distribution": "Austrália (Território do Norte, Austrália Ocidental). Extinção: Desconhecida, possivelmente entre 1950 e 1960. Última localização conhecida: McEwin Hills, área do Lago Mackay, Austrália Central (local de coleta do único espécime moderno em 1933). Material subfóssil também encontrado em Stegamite Cave, planície de Nullarbor do sul, Austrália Ocidental..",
+      "habitat": "Historical habitat of Desert Bettong included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "bettongia_anhydra.jpg",
+      "continent": "Austrália",
+      "coordinates": [
+        {
+          "location": "Austrália",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Território do Norte",
+          "lat": -19.8516101,
+          "lon": 133.2303375,
+          "display_name": "Northern Territory, Australia"
+        },
+        {
+          "location": "Austrália Ocidental",
+          "lat": -25.2303005,
+          "lon": 121.0187246,
+          "display_name": "Western Australia, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Nullarbor dwarf bettong",
+      "binomial_name": "Bettongia pusilla",
+      "description": "Nullarbor dwarf bettong (Bettongia pusilla) was an extinct mammal that lived in Nullarbor Plain, Western Australia, South Australia. Extinção: During the period of colonisation (recently extinct). Última localização conhecida: Nullarbor Plain..",
+      "distribution": "Nullarbor Plain, Western Australia, South Australia. Extinção: During the period of colonisation (recently extinct). Última localização conhecida: Nullarbor Plain.",
+      "habitat": "Historical habitat of Nullarbor dwarf bettong included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "bettongia_anhydra.jpg",
+      "continent": "Australia",
+      "coordinates": [
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Nullarbor Plain",
+          "lat": -31.35,
+          "lon": 128.9,
+          "display_name": "Nullarbor Plain, Forrest, City Of Kalgoorlie-Boulder, Western Australia, Australia"
+        },
+        {
+          "location": "South Australia",
+          "lat": -30.5343665,
+          "lon": 135.6301212,
+          "display_name": "South Australia, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Oriente cave rat",
+      "binomial_name": "Boromys offella",
+      "description": "Oriente cave rat (Boromys offella) was an extinct mammal that lived in Cuba. Extinção: Holocene (possibly with the introduction of other rats). Última localização conhecida: Cuba..",
+      "distribution": "Cuba. Extinção: Holocene (possibly with the introduction of other rats). Última localização conhecida: Cuba.",
+      "habitat": "Historical habitat of Oriente cave rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Boromys_offella.jpg",
+      "continent": "North America",
+      "coordinates": [
+        {
+          "location": "North America",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "Cuba",
+          "lat": 23.0131338,
+          "lon": -80.8328748,
+          "display_name": "Cuba"
+        }
+      ]
+    },
+    {
+      "common_name": "Torre's cave rat",
+      "binomial_name": "Boromys torrei",
+      "description": "Torre's cave rat (Boromys torrei) was an extinct mammal that lived in Cuba. Extinção: Extinct (Last assessed 10 June 2016). Última localização conhecida: Cuba..",
+      "distribution": "Cuba. Extinção: Extinct (Last assessed 10 June 2016). Última localização conhecida: Cuba.",
+      "habitat": "Historical habitat of Torre's cave rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Boromys_offella.jpg",
+      "continent": "North America",
+      "coordinates": [
+        {
+          "location": "North America",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "Cuba",
+          "lat": 23.0131338,
+          "lon": -80.8328748,
+          "display_name": "Cuba"
+        }
+      ]
+    },
+    {
+      "common_name": "Hispaniolan edible rat",
+      "binomial_name": "Brotomys voratus",
+      "description": "Hispaniolan edible rat (Brotomys voratus) was an extinct mammal that lived in Dominican Republic, Haiti. Extinção: 1550-1670 AD (carbon dated to 340 ± 60 years BP). Última localização conhecida: Hispaniola (Dominican Republic, Haiti)..",
+      "distribution": "Dominican Republic, Haiti. Extinção: 1550-1670 AD (carbon dated to 340 ± 60 years BP). Última localização conhecida: Hispaniola (Dominican Republic, Haiti).",
+      "habitat": "Historical habitat of Hispaniolan edible rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Brotomys_voratus.jpeg",
+      "continent": "North America (Caribbean)",
+      "coordinates": [
+        {
+          "location": "Dominican Republic",
+          "lat": 19.0974031,
+          "lon": -70.3028026,
+          "display_name": "República Dominicana"
+        },
+        {
+          "location": "Haiti",
+          "lat": 19.1399952,
+          "lon": -72.3570972,
+          "display_name": "Ayiti"
+        }
+      ]
+    },
+    {
+      "common_name": "Northern pig-footed bandicoot",
+      "binomial_name": "Chaeropus yirratji",
+      "description": "Northern pig-footed bandicoot (Chaeropus yirratji) was an extinct mammal that lived in Central and Western Australia (Gibson and Great Sandy Deserts). Extinção: 1950s. Última localização conhecida: Gibson and Great Sandy Deserts, near Alice Springs..",
+      "distribution": "Central and Western Australia (Gibson and Great Sandy Deserts). Extinção: 1950s. Última localização conhecida: Gibson and Great Sandy Deserts, near Alice Springs.",
+      "habitat": "Historical habitat of Northern pig-footed bandicoot included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Peramelemorphia",
+      "image_filename": "chaeropus_yirratji.jpg",
+      "continent": "Australia",
+      "coordinates": [
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "and  Australia",
+          "lat": -25.0,
+          "lon": 135.0,
+          "display_name": "Australia, Buttway Lane, West Street, Cliffe and Cliffe Woods, Cliffe, Medway, England, ME3 7QT, United Kingdom"
+        }
+      ]
+    },
+    {
+      "common_name": "Capricorn rabbit rat",
+      "binomial_name": "Conilurus capricornensis",
+      "description": "Capricorn rabbit rat (Conilurus capricornensis) was an extinct mammal that lived in Queensland, Australia. Extinção: After European settlement (post-1788), classed as Extinct by IUCN Red List as of 29 September 2024.. Última localização conhecida: Capricorn Caves, Queensland, Australia..",
+      "distribution": "Queensland, Australia. Extinção: After European settlement (post-1788), classed as Extinct by IUCN Red List as of 29 September 2024.. Última localização conhecida: Capricorn Caves, Queensland, Australia.",
+      "habitat": "Historical habitat of Capricorn rabbit rat included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Conilurus_albipes.jpg",
+      "continent": "Australia",
+      "coordinates": [
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Queensland",
+          "lat": -22.1646782,
+          "lon": 144.5844903,
+          "display_name": "Queensland, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Red-bellied gracile opossum",
+      "binomial_name": "Cryptonanus ignitus",
+      "description": "Red-bellied gracile opossum (Cryptonanus ignitus) was an extinct mammal that lived in Jujuy Province, Argentina. Extinção: 1962. Última localização conhecida: Jujuy Province, Argentina..",
+      "distribution": "Jujuy Province, Argentina. Extinção: 1962. Última localização conhecida: Jujuy Province, Argentina.",
+      "habitat": "Historical habitat of Red-bellied gracile opossum included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Cryptonanus_ignitus.jpg",
+      "continent": "South America",
+      "coordinates": [
+        {
+          "location": "South America",
+          "lat": -21.0002179,
+          "lon": -61.0006565,
+          "display_name": "América do Sul;América del Sur"
+        },
+        {
+          "location": "Jujuy Province",
+          "lat": -31.4128329,
+          "lon": -64.1902643,
+          "display_name": "Jujuy, La Peatonal, Centro, Córdoba, Municipio de Córdoba, Pedanía Capital, Departamento Capital, Provincia de Córdoba, X5000, Argentina"
+        },
+        {
+          "location": "Argentina",
+          "lat": -34.9964963,
+          "lon": -64.9672817,
+          "display_name": "Argentina"
+        }
+      ]
+    },
+    {
+      "common_name": "Giant Fossa",
+      "binomial_name": "Cryptoprocta spelea",
+      "description": "Giant Fossa (Cryptoprocta spelea) was an extinct mammal that lived in Madagascar (northern, western, southern, and central regions). Extinção: pre 1658 (possibly before 1400). Última localização conhecida: Various caves in northern, western, southern, and central Madagascar..",
+      "distribution": "Madagascar (northern, western, southern, and central regions). Extinção: pre 1658 (possibly before 1400). Última localização conhecida: Various caves in northern, western, southern, and central Madagascar.",
+      "habitat": "Historical habitat of Giant Fossa included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "cryptoprocta_spelea.jpg",
+      "continent": "Africa",
+      "coordinates": [
+        {
+          "location": "Africa",
+          "lat": 11.5024338,
+          "lon": 17.7578122,
+          "display_name": "Afrika / أفريقيا"
+        },
+        {
+          "location": "Madagascar",
+          "lat": -18.9249604,
+          "lon": 46.4416422,
+          "display_name": "Madagasikara / Madagascar"
+        },
+        {
+          "location": "and  regions",
+          "lat": 35.9134548,
+          "lon": -84.0816929,
+          "display_name": "Regions Bank, North Peters Road, Town and Country Center, Ten Mile, Knoxville, Knox County, East Tennessee, Tennessee, 37923, United States"
+        }
+      ]
+    },
+    {
+      "common_name": "Gazela-saudita",
+      "binomial_name": "Gazella saudiya",
+      "description": "Gazela-saudita (Gazella saudiya) was an extinct mammal that lived in Kuwait, Iêmen, Arábia Saudita (principalmente ocidental). Extinção: 1970 (última observação na natureza), 1996 (declarada extinta na natureza), 2008 (declarada extinta na Lista Vermelha da IUCN). Última localização conhecida: Península Arábica (Dhlam, Arábia Saudita, é mencionada como local de coleta de espécime)..",
+      "distribution": "Kuwait, Iêmen, Arábia Saudita (principalmente ocidental). Extinção: 1970 (última observação na natureza), 1996 (declarada extinta na natureza), 2008 (declarada extinta na Lista Vermelha da IUCN). Última localização conhecida: Península Arábica (Dhlam, Arábia Saudita, é mencionada como local de coleta de espécime).",
+      "habitat": "Historical habitat of Gazela-saudita included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Gazella_bilkis.jpg",
+      "continent": "Ásia",
+      "coordinates": [
+        {
+          "location": "Ásia",
+          "lat": 51.2086975,
+          "lon": 89.2343748,
+          "display_name": "Asia"
+        },
+        {
+          "location": "Kuwait",
+          "lat": 29.2733964,
+          "lon": 47.4979476,
+          "display_name": "الكويت"
+        },
+        {
+          "location": "Iêmen",
+          "lat": 16.3471243,
+          "lon": 47.8915271,
+          "display_name": "اليمن"
+        },
+        {
+          "location": "Arábia Saudita",
+          "lat": 25.6242618,
+          "lon": 42.3528328,
+          "display_name": "السعودية"
+        }
+      ]
+    },
+    {
+      "common_name": "Cuban coney",
+      "binomial_name": "Geocapromys columbianus",
+      "description": "Cuban coney (Geocapromys columbianus) was an extinct mammal that lived in Cuba. Extinção: approximately 1500 or earlier in the Holocene. Última localização conhecida: Cuba..",
+      "distribution": "Cuba. Extinção: approximately 1500 or earlier in the Holocene. Última localização conhecida: Cuba.",
+      "habitat": "Historical habitat of Cuban coney included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Geocapromys_columbianus.jpg",
+      "continent": "North America",
+      "coordinates": [
+        {
+          "location": "North America",
+          "lat": 51.0000002,
+          "lon": -109.0,
+          "display_name": "North America"
+        },
+        {
+          "location": "Cuba",
+          "lat": 23.0131338,
+          "lon": -80.8328748,
+          "display_name": "Cuba"
+        }
+      ]
+    },
+    {
+      "common_name": "Little Swan Island hutia",
+      "binomial_name": "Geocapromys thoracatus",
+      "description": "Little Swan Island hutia (Geocapromys thoracatus) was an extinct mammal that lived in Little Swan Island, Honduras. Extinção: 1955. Última localização conhecida: Little Swan Island..",
+      "distribution": "Little Swan Island, Honduras. Extinção: 1955. Última localização conhecida: Little Swan Island.",
+      "habitat": "Historical habitat of Little Swan Island hutia included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Geocapromys_columbianus.jpg",
+      "continent": "North America (Caribbean)",
+      "coordinates": [
+        {
+          "location": "Little Swan Island",
+          "lat": 17.4123029,
+          "lon": -83.8975952,
+          "display_name": "Isla Cisne Pequeño, Islas de la Bahía, Honduras"
+        },
+        {
+          "location": "Honduras",
+          "lat": 15.2572432,
+          "lon": -86.0755145,
+          "display_name": "Honduras"
+        }
+      ]
+    },
+    {
+      "common_name": "Imposter hutia",
+      "binomial_name": "Hexolobodon phenax",
+      "description": "Imposter hutia (Hexolobodon phenax) was an extinct mammal that lived in Hispaniola (Haiti, República Dominicana). Extinção: Após a colonização europeia em 1500s (possivelmente por volta de 1600). Última localização conhecida: Hispaniola (Haiti, República Dominicana)..",
+      "distribution": "Hispaniola (Haiti, República Dominicana). Extinção: Após a colonização europeia em 1500s (possivelmente por volta de 1600). Última localização conhecida: Hispaniola (Haiti, República Dominicana).",
+      "habitat": "Historical habitat of Imposter hutia included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Hexolobodon_phenax.jpg",
+      "continent": "América do Norte (Caribe)",
+      "coordinates": [
+        {
+          "location": "América do Norte (Caribe)",
+          "lat": 34.1205947,
+          "lon": -77.8771272,
+          "display_name": "Caribe Court, New Hanover County, North Carolina, 28412, United States"
+        },
+        {
+          "location": "Hispaniola",
+          "lat": 18.7785812,
+          "lon": -70.5427698,
+          "display_name": "La Hispaniola, República Dominicana"
+        },
+        {
+          "location": "Haiti",
+          "lat": 19.1399952,
+          "lon": -72.3570972,
+          "display_name": "Ayiti"
+        },
+        {
+          "location": "República Dominicana",
+          "lat": 19.0974031,
+          "lon": -70.3028026,
+          "display_name": "República Dominicana"
+        }
+      ]
+    },
+    {
+      "common_name": "Madagascar ou hipopótamo-pigmeu de Madagáscar",
+      "binomial_name": "Hippopotamus madagascariensis",
+      "description": "Madagascar ou hipopótamo-pigmeu de Madagáscar (Hippopotamus madagascariensis) was an extinct mammal that lived in Madagáscar. Extinção: após 1500. Última localização conhecida: Terras altas florestadas de Madagáscar (fósseis), Ambolisaka perto do Lago Ihotry (local de descoberta)..",
+      "distribution": "Madagáscar. Extinção: após 1500. Última localização conhecida: Terras altas florestadas de Madagáscar (fósseis), Ambolisaka perto do Lago Ihotry (local de descoberta).",
+      "habitat": "Historical habitat of Madagascar ou hipopótamo-pigmeu de Madagáscar included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Hippopotamus_madagascariensis.jpg",
+      "continent": "África",
+      "coordinates": [
+        {
+          "location": "África",
+          "lat": 11.5024338,
+          "lon": 17.7578122,
+          "display_name": "Afrika / أفريقيا"
+        },
+        {
+          "location": "Madagáscar",
+          "lat": -18.9249604,
+          "lon": 46.4416422,
+          "display_name": "Madagasikara / Madagascar"
+        }
+      ]
+    },
+    {
+      "common_name": "Montane hutia",
+      "binomial_name": "Isolobodon montanus",
+      "description": "Montane hutia (Isolobodon montanus) was an extinct mammal that lived in Hispaniola (Dominican Republic, Haiti). Extinção: Post-European colonization (due to introduced rodents). Última localização conhecida: Hispaniola..",
+      "distribution": "Hispaniola (Dominican Republic, Haiti). Extinção: Post-European colonization (due to introduced rodents). Última localização conhecida: Hispaniola.",
+      "habitat": "Historical habitat of Montane hutia included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Isolobodon_montanus.jpg",
+      "continent": "North America (Caribbean)",
+      "coordinates": [
+        {
+          "location": "Hispaniola",
+          "lat": 18.7785812,
+          "lon": -70.5427698,
+          "display_name": "La Hispaniola, República Dominicana"
+        },
+        {
+          "location": "Dominican Republic",
+          "lat": 19.0974031,
+          "lon": -70.3028026,
+          "display_name": "República Dominicana"
+        },
+        {
+          "location": "Haiti",
+          "lat": 19.1399952,
+          "lon": -72.3570972,
+          "display_name": "Ayiti"
+        }
+      ]
+    },
+    {
+      "common_name": "Hutia de Porto Rico",
+      "binomial_name": "Isolobodon portoricensis",
+      "description": "Hutia de Porto Rico (Isolobodon portoricensis) was an extinct mammal that lived in Hispaniola (República Dominicana, Haiti), Ilha Gonâve, Ilhas Virgens, Porto Rico. Extinção: ~1525. Última localização conhecida: Não especificado, mas introduzido nas Ilhas Virgens e Porto Rico, e encontrado em Hispaniola e Ilha Gonâve...",
+      "distribution": "Hispaniola (República Dominicana, Haiti), Ilha Gonâve, Ilhas Virgens, Porto Rico. Extinção: ~1525. Última localização conhecida: Não especificado, mas introduzido nas Ilhas Virgens e Porto Rico, e encontrado em Hispaniola e Ilha Gonâve..",
+      "habitat": "Historical habitat of Hutia de Porto Rico included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Isolobodon_montanus.jpg",
+      "continent": "Caribe",
+      "coordinates": [
+        {
+          "location": "Caribe",
+          "lat": -37.9776195,
+          "lon": -57.6251779,
+          "display_name": "Caribe, Mar del Plata, Partido de General Pueyrredón, Buenos Aires, Argentina"
+        },
+        {
+          "location": "Hispaniola",
+          "lat": 18.7785812,
+          "lon": -70.5427698,
+          "display_name": "La Hispaniola, República Dominicana"
+        },
+        {
+          "location": "República Dominicana",
+          "lat": 19.0974031,
+          "lon": -70.3028026,
+          "display_name": "República Dominicana"
+        },
+        {
+          "location": "Haiti",
+          "lat": 19.1399952,
+          "lon": -72.3570972,
+          "display_name": "Ayiti"
+        },
+        {
+          "location": "Ilha Gonâve",
+          "lat": 18.8318139,
+          "lon": -73.0169791,
+          "display_name": "Île de la Gonâve, Arrondissement de La Gonâve, Département de l'Ouest, 6510, Ayiti"
+        }
+      ]
+    },
+    {
+      "common_name": "Viscacha Peruana das Planícies (Peruvian Plains Viscacha)",
+      "binomial_name": "Lagostomus crassus",
+      "description": "Viscacha Peruana das Planícies (Peruvian Plains Viscacha) (Lagostomus crassus) was an extinct mammal that lived in Peru. Extinção: Holoceno Tardio (Extinto, avaliado em 2016). Última localização conhecida: Sul do Peru..",
+      "distribution": "Peru. Extinção: Holoceno Tardio (Extinto, avaliado em 2016). Última localização conhecida: Sul do Peru.",
+      "habitat": "Historical habitat of Viscacha Peruana das Planícies (Peruvian Plains Viscacha) included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "lagostomus_crassus.jpg",
+      "continent": "América do Sul",
+      "coordinates": [
+        {
+          "location": "América do Sul",
+          "lat": -21.0002179,
+          "lon": -61.0006565,
+          "display_name": "América do Sul;América del Sur"
+        },
+        {
+          "location": "Peru",
+          "lat": -6.8699697,
+          "lon": -75.0458515,
+          "display_name": "Perú"
+        }
+      ]
+    },
+    {
+      "common_name": "Darwin's nesoryzomys",
+      "binomial_name": "Nesoryzomys darwini",
+      "description": "Darwin's nesoryzomys (Nesoryzomys darwini) was an extinct mammal that lived in Ilha de Santa Cruz, Ilhas Galápagos, Equador. Extinção: 1930s. Última localização conhecida: Ilha de Santa Cruz, Ilhas Galápagos..",
+      "distribution": "Ilha de Santa Cruz, Ilhas Galápagos, Equador. Extinção: 1930s. Última localização conhecida: Ilha de Santa Cruz, Ilhas Galápagos.",
+      "habitat": "Historical habitat of Darwin's nesoryzomys included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Nesoryzomys_darwini.jpg",
+      "continent": "América do Sul",
+      "coordinates": [
+        {
+          "location": "América do Sul",
+          "lat": -21.0002179,
+          "lon": -61.0006565,
+          "display_name": "América do Sul;América del Sur"
+        },
+        {
+          "location": "Ilha de Santa Cruz",
+          "lat": -7.3615252,
+          "lon": -58.108623,
+          "display_name": "Ilha de Santa Cruz, Apiacás, Região Geográfica Imediata de Alta Floresta, Região Geográfica Intermediária de Sinop, Mato Grosso, Região Centro-Oeste, Brasil"
+        },
+        {
+          "location": "Ilhas Galápagos",
+          "lat": 39.8815668,
+          "lon": 4.254892,
+          "display_name": "Carrer Illes Galápagos, Maó, Menorca, Illes Balears, 07703, España"
+        },
+        {
+          "location": "Equador",
+          "lat": -1.3397668,
+          "lon": -79.3666965,
+          "display_name": "Ecuador"
+        }
+      ]
+    },
+    {
+      "common_name": "Toolache wallaby",
+      "binomial_name": "Notamacropus greyi",
+      "description": "Toolache wallaby (Notamacropus greyi) was an extinct mammal that lived in Southeastern South Australia, southwestern Victoria. Extinção: 1939. Última localização conhecida: Coorong, South Australia (type specimen); last known in captivity..",
+      "distribution": "Southeastern South Australia, southwestern Victoria. Extinção: 1939. Última localização conhecida: Coorong, South Australia (type specimen); last known in captivity.",
+      "habitat": "Historical habitat of Toolache wallaby included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Diprotodontia",
+      "image_filename": "Notamacropus_greyi.jpg",
+      "continent": "Australia",
+      "coordinates": [
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Southeastern South Australia",
+          "lat": -30.3226766,
+          "lon": 150.2285218,
+          "display_name": "Southeastern Fire Trail, Lindesay, Tamworth Regional Council, New South Wales, 2347, Australia"
+        },
+        {
+          "location": "southwestern Victoria",
+          "lat": 42.9887838,
+          "lon": -81.2485137,
+          "display_name": "Victoria Park, London, Southwestern Ontario, Ontario, Canada"
+        }
+      ]
+    },
+    {
+      "common_name": "Great hopping mouse, Broad-cheeked hopping mouse",
+      "binomial_name": "Notomys robustus",
+      "description": "Great hopping mouse, Broad-cheeked hopping mouse (Notomys robustus) was an extinct mammal that lived in Australia (South Australia, Flinders Ranges). Extinção: Possibly second half of 19th century. Última localização conhecida: Flinders Ranges, South Australia..",
+      "distribution": "Australia (South Australia, Flinders Ranges). Extinção: Possibly second half of 19th century. Última localização conhecida: Flinders Ranges, South Australia.",
+      "habitat": "Historical habitat of Great hopping mouse, Broad-cheeked hopping mouse included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Notomys_amplus.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "South Australia",
+          "lat": -30.5343665,
+          "lon": 135.6301212,
+          "display_name": "South Australia, Australia"
+        },
+        {
+          "location": "Flinders Ranges",
+          "lat": -31.497,
+          "lon": 138.545,
+          "display_name": "Flinders Ranges, Pastoral Unincorporated Area, South Australia, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Crescent nail-tail wallaby",
+      "binomial_name": "Onychogalea lunata",
+      "description": "Crescent nail-tail wallaby (Onychogalea lunata) was an extinct mammal that lived in Australia (Western Australia, Northern Territory, South Australia, New South Wales). Extinção: 1956. Última localização conhecida: Jervois and Tarlton Ranges, Northern Territory, Australia..",
+      "distribution": "Australia (Western Australia, Northern Territory, South Australia, New South Wales). Extinção: 1956. Última localização conhecida: Jervois and Tarlton Ranges, Northern Territory, Australia.",
+      "habitat": "Historical habitat of Crescent nail-tail wallaby included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Diprotodontia",
+      "image_filename": "Onychogalea_lunata.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "Territory",
+          "lat": 44.4308975,
+          "lon": -89.6884637,
+          "display_name": "Wisconsin, United States"
+        },
+        {
+          "location": "South Australia",
+          "lat": -30.5343665,
+          "lon": 135.6301212,
+          "display_name": "South Australia, Australia"
+        },
+        {
+          "location": "New South Wales",
+          "lat": -31.8759835,
+          "lon": 147.2869493,
+          "display_name": "New South Wales, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Long-eared Mouse",
+      "binomial_name": "Pseudomys auritus Thomas, 1910",
+      "description": "Long-eared Mouse (Pseudomys auritus Thomas, 1910) was an extinct mammal that lived in South Australia, Victoria. Extinção: 1850s. Última localização conhecida: Lake Albert, South Australia..",
+      "distribution": "South Australia, Victoria. Extinção: 1850s. Última localização conhecida: Lake Albert, South Australia.",
+      "habitat": "Historical habitat of Long-eared Mouse included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Rodentia",
+      "image_filename": "Pseudomys_auritus.jpg",
+      "continent": "Australia",
+      "coordinates": [
+        {
+          "location": "Australia",
+          "lat": -24.7761086,
+          "lon": 134.755,
+          "display_name": "Australia"
+        },
+        {
+          "location": "South Australia",
+          "lat": -30.5343665,
+          "lon": 135.6301212,
+          "display_name": "South Australia, Australia"
+        },
+        {
+          "location": "Victoria",
+          "lat": -36.5986096,
+          "lon": 144.6780052,
+          "display_name": "Victoria, Australia"
+        }
+      ]
+    },
+    {
+      "common_name": "Small Samoan flying fox",
+      "binomial_name": "Pteropus allenorum",
+      "description": "Small Samoan flying fox (Pteropus allenorum) was an extinct mammal that lived in Samoa (Ilha de Upolu). Extinção: Após 1856 (considerado extinto). Última localização conhecida: Ilha de Upolu, Samoa..",
+      "distribution": "Samoa (Ilha de Upolu). Extinção: Após 1856 (considerado extinto). Última localização conhecida: Ilha de Upolu, Samoa.",
+      "habitat": "Historical habitat of Small Samoan flying fox included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Pteropus_allenorum.jpg",
+      "continent": "Oceania",
+      "coordinates": [
+        {
+          "location": "Oceania",
+          "lat": -12.7725835,
+          "lon": 173.7741688,
+          "display_name": "Oceania"
+        },
+        {
+          "location": "Samoa",
+          "lat": -13.7693895,
+          "lon": -172.12005,
+          "display_name": "Sāmoa"
+        }
+      ]
+    },
+    {
+      "common_name": "Large Samoan Flying Fox",
+      "binomial_name": "Pteropus coxi",
+      "description": "Large Samoan Flying Fox (Pteropus coxi) was an extinct mammal that lived in Samoa. Extinção: Believed to be extinct (last collected 1856, identified 2009). Última localização conhecida: Samoa..",
+      "distribution": "Samoa. Extinção: Believed to be extinct (last collected 1856, identified 2009). Última localização conhecida: Samoa.",
+      "habitat": "Historical habitat of Large Samoan Flying Fox included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Pteropus_allenorum.jpg",
+      "continent": "Oceania (Polynesia)",
+      "coordinates": [
+        {
+          "location": "Samoa",
+          "lat": -13.7693895,
+          "lon": -172.12005,
+          "display_name": "Sāmoa"
+        }
+      ]
+    },
+    {
+      "common_name": "Indo-chinese Warty Pig",
+      "binomial_name": "Sus bucculentus",
+      "description": "Indo-chinese Warty Pig (Sus bucculentus) was an extinct mammal that lived in Lao People's Democratic Republic; Viet Nam. Extinção: 2016. Última localização conhecida: Annamite Range, Laos..",
+      "distribution": "Lao People's Democratic Republic; Viet Nam. Extinção: 2016. Última localização conhecida: Annamite Range, Laos.",
+      "habitat": "Historical habitat of Indo-chinese Warty Pig included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "lagostomus_crassus.jpg",
+      "continent": "Asia",
+      "coordinates": [
+        {
+          "location": "Asia",
+          "lat": 51.2086975,
+          "lon": 89.2343748,
+          "display_name": "Asia"
+        },
+        {
+          "location": "Lao People's Democratic Republic",
+          "lat": 20.0171109,
+          "lon": 103.378253,
+          "display_name": "ປະເທດລາວ"
+        },
+        {
+          "location": "Viet Nam",
+          "lat": 15.9266657,
+          "lon": 107.9650855,
+          "display_name": "Việt Nam"
+        }
+      ]
+    },
+    {
+      "common_name": "Macaco-jamaicano",
+      "binomial_name": "Xenothrix mcgregori",
+      "description": "Macaco-jamaicano (Xenothrix mcgregori) was an extinct mammal that lived in Jamaica. Extinção: c. 1050. Última localização conhecida: Caverna Long Mile, Jamaica..",
+      "distribution": "Jamaica. Extinção: c. 1050. Última localização conhecida: Caverna Long Mile, Jamaica.",
+      "habitat": "Historical habitat of Macaco-jamaicano included diverse ecosystems.",
+      "extinction_cause": "Habitat loss, hunting, and introduction of invasive species.",
+      "order": "Unknown",
+      "image_filename": "Xenothrix_mcgregori.jpg",
+      "continent": "América do Norte (Caribe)",
+      "coordinates": [
+        {
+          "location": "América do Norte (Caribe)",
+          "lat": 34.1205947,
+          "lon": -77.8771272,
+          "display_name": "Caribe Court, New Hanover County, North Carolina, 28412, United States"
+        },
+        {
+          "location": "Jamaica",
+          "lat": 18.1850507,
+          "lon": -77.3947693,
+          "display_name": "Jamaica"
+        }
+      ]
+    }
+  ],
+  "total": 85
+}

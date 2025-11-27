@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Admin - Usuários{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>👥 Gerenciar Usuários</h2>
+
+    <div class="admin-nav">
+        <a href="{% url 'mammals:admin_mammals' %}">Mamíferos</a>
+        <a href="{% url 'mammals:admin_users' %}" class="active">Usuários</a>
+    </div>
+
+    <table class="admin-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Admin</th>
+                <th>Comentários</th>
+                <th>Favoritos</th>
+                <th>Membro desde</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for u in users %}
+            <tr>
+                <td>{{ u.id }}</td>
+                <td>{{ u.username }}</td>
+                <td>{{ u.email }}</td>
+                <td>{% if u.profile.is_admin %}✅{% else %}❌{% endif %}</td>
+                <td>{{ u.comment_count }}</td>
+                <td>{{ u.favorite_count }}</td>
+                <td>{{ u.date_joined|date:"d/m/Y" }}</td>
+                <td class="admin-actions">
+                    <form method="post" action="{% url 'mammals:admin_toggle_admin' u.id %}" style="display: inline;">
+                        {% csrf_token %}
+                        <button type="submit" class="btn-edit">Toggle Admin</button>
+                    </form>
+                    <form method="post" action="{% url 'mammals:admin_delete_user' u.id %}" style="display: inline;">
+                        {% csrf_token %}
+                        <button type="submit" class="btn-delete" onclick="return confirm('Tem certeza?')">Deletar</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

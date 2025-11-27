@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "About" %} - {% trans "Extinct Mammals Catalog" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="about-page">
+        <h2>{% trans "About the Project" %}</h2>
+        
+        <section class="about-section">
+            <h3>🎯 {% trans "Objective" %}</h3>
+            <p>
+                {% trans "This digital catalog was developed as part of a Final Course Project (TCC) on ICT applied to biological memory conservation. The objective is to document and preserve information about extinct mammals since 1500, promoting awareness about the importance of biodiversity conservation." %}
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h3>📚 {% trans "Methodology" %}</h3>
+            <p>
+                {% trans "Data was collected from reliable scientific sources, including the IUCN Red List and academic publications. Each documented species includes information about habitat, geographic distribution and causes of extinction." %}
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h3>🔬 {% trans "Technologies" %}</h3>
+            <p>
+                {% trans "This project was developed using Django, a high-level Python web framework, with SQLite database for information storage." %}
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h3>📧 {% trans "Contact" %}</h3>
+            <p>
+                {% trans "For more information about the project, contact us via email:" %} 
+                <a href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+            </p>
+        </section>
+    </div>
+</div>
+{% endblock %}
+

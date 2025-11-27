@@ -1,0 +1,363 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Global Distribution Map" %} - {% trans "Extinct Mammals Catalog" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="global-map-header">
+        <h2>🌍 Mapa de Distribuição Global</h2>
+        <p class="map-description">
+            Mapa interativo mostrando a distribuição histórica de mamíferos extintos desde 1500. 
+            <strong>Clique nas bolas coloridas</strong> para ver as espécies de cada região. 
+            Cores mais escuras indicam maior concentração de espécies.
+        </p>
+    </div>
+
+    <!-- Estatísticas -->
+    <div class="map-statistics" id="map-statistics">
+        <div class="stat-card">
+            <div class="stat-icon">📍</div>
+            <div class="stat-content">
+                <div class="stat-value" id="stat-locations">-</div>
+                <div class="stat-label">Localizações</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">🦴</div>
+            <div class="stat-content">
+                <div class="stat-value" id="stat-species">-</div>
+                <div class="stat-label">Espécies</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">🔥</div>
+            <div class="stat-content">
+                <div class="stat-value" id="stat-max">-</div>
+                <div class="stat-label">Concentração Máxima</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading -->
+    <div class="map-loading" id="map-loading">
+        <div class="spinner"></div>
+        <p>{% trans "Loading map data..." %}</p>
+    </div>
+
+    <!-- Mapa -->
+    <div class="global-map-container" id="global-map-container" style="display: none;">
+        <div id="global-map"></div>
+    </div>
+
+    <!-- Legenda -->
+    <div class="map-legend-container" id="map-legend-container" style="display: none;">
+        <h3>{% trans "Concentration Legend" %}</h3>
+        <div class="legend-gradient">
+            <div class="gradient-bar"></div>
+            <div class="gradient-labels">
+                <span>1 {% trans "species" %}</span>
+                <span id="legend-max">10+ {% trans "species" %}</span>
+            </div>
+        </div>
+        <div class="legend-info">
+            <p><strong>📌 Como usar o mapa:</strong></p>
+            <ul>
+                <li><strong>Clique nas bolas coloridas</strong> para ver a lista de espécies da região</li>
+                <li><strong>Clique no nome de uma espécie</strong> para ver seus detalhes completos</li>
+                <li><strong>Use o scroll do mouse</strong> para dar zoom</li>
+                <li><strong>Arraste o mapa</strong> para navegar por diferentes regiões</li>
+                <li><strong>Bolas maiores e mais vermelhas</strong> = maior concentração de espécies</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Error -->
+    <div class="map-error" id="map-error" style="display: none;">
+        <div class="error-icon">⚠️</div>
+        <p>{% trans "Error loading map data. Please try again later." %}</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""/>
+
+<!-- Leaflet MarkerCluster CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+<style>
+/* Global Map Styles */
+.global-map-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.global-map-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.map-description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estatísticas */
+.map-statistics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+}
+
+.stat-content {
+    flex: 1;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Loading */
+.map-loading {
+    text-align: center;
+    padding: 3rem;
+}
+
+.spinner {
+    border: 4px solid var(--border-color);
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Mapa */
+.global-map-container {
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#global-map {
+    width: 100%;
+    height: 600px;
+    background: var(--card-bg);
+}
+
+/* Legenda */
+.map-legend-container {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.map-legend-container h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.legend-gradient {
+    margin-bottom: 1.5rem;
+}
+
+.gradient-bar {
+    height: 30px;
+    background: linear-gradient(to right, 
+        rgba(255, 193, 7, 0.3),
+        rgba(255, 152, 0, 0.5),
+        rgba(244, 67, 54, 0.7),
+        rgba(211, 47, 47, 0.9)
+    );
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.gradient-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.legend-info {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+.legend-info ul {
+    margin: 0.5rem 0 0 0;
+    padding-left: 1.5rem;
+}
+
+.legend-info li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+/* Error */
+.map-error {
+    text-align: center;
+    padding: 3rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.error-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Popup customizado */
+.leaflet-popup-content {
+    margin: 0;
+    padding: 0;
+}
+
+.species-popup {
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.popup-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1rem;
+    border-radius: 8px 8px 0 0;
+}
+
+.popup-header h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.popup-count {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.popup-species-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 0.5rem;
+}
+
+.species-item {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: background 0.2s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.species-item:last-child {
+    border-bottom: none;
+}
+
+.species-item:hover {
+    background: var(--hover-bg);
+}
+
+.species-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.species-info {
+    flex: 1;
+}
+
+.species-name {
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 0.25rem;
+}
+
+.species-scientific {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .global-map-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    #global-map {
+        height: 400px;
+    }
+    
+    .map-statistics {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+<!-- Leaflet MarkerCluster JS -->
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+<script src="{% static 'js/global_map.js' %}"></script>
+{% endblock %}

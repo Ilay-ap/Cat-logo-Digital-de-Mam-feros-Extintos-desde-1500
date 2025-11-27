@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Admin - Mamíferos{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="admin-header">
+        <h2>🔧 Gerenciar Mamíferos</h2>
+        <a href="{% url 'mammals:admin_add_mammal' %}" class="btn-primary">➕ Adicionar Mamífero</a>
+    </div>
+
+    <div class="admin-nav">
+        <a href="{% url 'mammals:admin_mammals' %}" class="active">Mamíferos</a>
+        <a href="{% url 'mammals:admin_users' %}">Usuários</a>
+    </div>
+
+    <table class="admin-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome Comum</th>
+                <th>Nome Científico</th>
+                <th>Continente</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for mammal in mammals %}
+            <tr>
+                <td>{{ mammal.id }}</td>
+                <td>{{ mammal.common_name }}</td>
+                <td><em>{{ mammal.binomial_name }}</em></td>
+                <td>{{ mammal.continent|default:"N/A" }}</td>
+                <td class="admin-actions">
+                    <a href="{% url 'mammals:detail' mammal.pk %}" class="btn-view">Ver</a>
+                    <a href="{% url 'mammals:admin_edit_mammal' mammal.pk %}" class="btn-edit">Editar</a>
+                    <form method="post" action="{% url 'mammals:admin_delete_mammal' mammal.pk %}" style="display: inline;">
+                        {% csrf_token %}
+                        <button type="submit" class="btn-delete" onclick="return confirm('Tem certeza?')">Deletar</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

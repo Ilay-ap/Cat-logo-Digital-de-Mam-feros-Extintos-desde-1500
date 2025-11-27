@@ -1,0 +1,560 @@
+{% extends "detail_scientific.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block extra_css %}
+{{ block.super }}
+<style>
+.topic-image {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.topic-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.topic-image img:hover {
+    transform: scale(1.02);
+}
+
+.image-caption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+.dossier-content {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.dossier-content h2 {
+    color: #1e3c72;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid #2a5298;
+}
+
+.dossier-content h3 {
+    color: #2a5298;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.dossier-content p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: justify;
+}
+
+.dossier-content ul, .dossier-content ol {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.dossier-content blockquote {
+    border-left: 4px solid #2a5298;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #555;
+    background: #f9fafb;
+    padding: 1rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.dossier-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.dossier-content table th,
+.dossier-content table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+}
+
+.dossier-content table th {
+    background: #f5f7fa;
+    font-weight: 600;
+    color: #1e3c72;
+}
+
+/* Modal para imagens */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.image-modal img {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-modal .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Mapa de distribuição */
+#distribution-map-container {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 8px;
+}
+
+#distribution-map {
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Seção de comentários integrada */
+.comments-section {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #f9fafb;
+    border-radius: 12px;
+}
+
+.comments-section h3 {
+    color: #1e3c72;
+    margin-bottom: 1.5rem;
+}
+
+.comment-form {
+    margin-bottom: 2rem;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.comment-form textarea:focus {
+    outline: none;
+    border-color: #2a5298;
+}
+
+.comment-form button {
+    margin-top: 1rem;
+}
+
+.comment {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.comment-author {
+    font-weight: 600;
+    color: #1e3c72;
+}
+
+.comment-date {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.comment-content {
+    color: #333;
+    line-height: 1.6;
+}
+
+.action-buttons {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-favorite {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #2a5298;
+    background: white;
+    color: #2a5298;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-favorite:hover {
+    background: #2a5298;
+    color: white;
+}
+
+.btn-favorite.active {
+    background: #2a5298;
+    color: white;
+}
+</style>
+{% endblock %}
+
+{% block dossier_content %}
+<div class="dossier-header">
+    <h1>Argentinean Warrah</h1>
+    <div class="scientific-name">Dusicyon avus Burmeister, 1866</div>
+    <div class="status-badge extinct">EXTINTO</div>
+</div>
+
+<nav class="dossier-nav">
+    <ul>
+        <li><a href="#sumario">Sumário</a></li>
+        <li><a href="#taxonomia">Taxonomia</a></li>
+        <li><a href="#morfologia">Morfologia</a></li>
+        <li><a href="#distribuicao">Distribuição</a></li>
+        <li><a href="#genetica">Genética</a></li>
+        <li><a href="#humanos">Relação com Humanos</a></li>
+        <li><a href="#extincao">Extinção</a></li>
+        <li><a href="#especimes">Espécimes</a></li>
+        <li><a href="#comentarios">Comentários</a></li>
+    </ul>
+</nav>
+
+<article class="dossier-content">
+
+<h2 id="sumario">Sumário Executivo</h2>
+<div class="topic-image">
+    <img src="{% static 'images/dusicyon_avus/MACN-Pv_14563_Dusicyon_avus_cranio_lateral.jpg' %}" 
+         alt="Crânio de Dusicyon avus - Vista lateral" 
+         onclick="openImageModal(this.src)">
+    <p class="image-caption">Crânio de Dusicyon avus - Vista lateral (MACN-Pv 14563)</p>
+</div>
+
+<p>Este dossiê apresenta uma compilação abrangente de informações sobre o canídeo sul-americano extinto, <em>Dusicyon avus</em>, conhecido como "Argentinean Warrah". A espécie era um canídeo de porte médio (10-15 kg), com uma dieta mais carnívora que as raposas atuais, e habitou as planícies da América do Sul (Pampas e Patagônia) desde o Pleistoceno Tardio até sua extinção recente, estimada entre 326 e 496 anos antes do presente.</p>
+
+<p>A análise genética confirma sua posição como o parente continental mais próximo do enigmático lobo-das-malvinas (<em>Dusicyon australis</em>), com uma divergência estimada em 16.000 anos. Evidências arqueológicas, incluindo o notável sepultamento de um espécime junto a humanos em Cañada Seca (Argentina), sugerem uma relação complexa e possivelmente de comensalismo ou domesticação incipiente.</p>
+
+<p>As causas de sua extinção não são totalmente compreendidas, mas uma combinação de fatores climáticos e antropogênicos, exacerbada por uma baixa diversidade genética, é a hipótese mais provável. Este documento consolida o conhecimento atual, servindo como uma base de fatos verificada para futuras pesquisas.</p>
+
+<h2 id="taxonomia">1. Taxonomia e Classificação</h2>
+
+<p>A classificação taxonômica de <em>Dusicyon avus</em> o posiciona firmemente dentro da família Canidae. A espécie foi originalmente descrita por Hermann Burmeister em 1866, com base em restos de um crânio quase completo da Província de Buenos Aires, Argentina. O gênero <em>Dusicyon</em> foi estabelecido em 1914, incluindo também o lobo-das-malvinas (<em>Dusicyon australis</em>) e outros canídeos sul-americanos que mais tarde foram reclassificados no gênero <em>Lycalopex</em>.</p>
+
+<p>Estudos genéticos recentes, baseados em DNA antigo, confirmaram a relação de parentesco próxima entre <em>D. avus</em> e <em>D. australis</em>, solidificando sua classificação dentro do mesmo gênero. A análise filogenética revelou que a linhagem que deu origem ao lobo-das-malvinas se isolou de <em>D. avus</em> há aproximadamente 16.000 anos.</p>
+
+<table>
+<thead>
+<tr>
+<th>Nível Taxonômico</th>
+<th>Classificação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reino</strong></td>
+<td>Animalia</td>
+</tr>
+<tr>
+<td><strong>Filo</strong></td>
+<td>Chordata</td>
+</tr>
+<tr>
+<td><strong>Classe</strong></td>
+<td>Mammalia</td>
+</tr>
+<tr>
+<td><strong>Ordem</strong></td>
+<td>Carnivora</td>
+</tr>
+<tr>
+<td><strong>Subordem</strong></td>
+<td>Caniformia</td>
+</tr>
+<tr>
+<td><strong>Família</strong></td>
+<td>Canidae</td>
+</tr>
+<tr>
+<td><strong>Gênero</strong></td>
+<td><em>Dusicyon</em></td>
+</tr>
+<tr>
+<td><strong>Espécie</strong></td>
+<td><em>Dusicyon avus</em></td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Nome binomial:</strong> <em>Dusicyon avus</em> Burmeister, 1866</p>
+<p><strong>Etimologia:</strong> O nome genérico <em>Dusicyon</em> deriva do grego <em>dysis</em> (pôr do sol, oeste) + <em>kyon</em> (cão), referindo-se à sua distribuição no hemisfério ocidental. O epíteto específico <em>avus</em> significa "ancestral" em latim, possivelmente referindo-se à sua antiguidade.</p>
+
+<h2 id="morfologia">2. Morfologia e Anatomia</h2>
+
+<h3>2.1. Características Gerais</h3>
+<p><em>Dusicyon avus</em> era um canídeo de porte médio, com massa corporal estimada entre 10-15 kg, comparável em tamanho a um coiote pequeno ou raposa grande. Sua morfologia craniana e dentária sugere uma dieta mais carnívora do que as raposas sul-americanas atuais do gênero <em>Lycalopex</em>.</p>
+
+<h3>2.2. Crânio e Dentição</h3>
+<p>O crânio de <em>D. avus</em> apresenta características distintivas que o diferenciam de outros canídeos sul-americanos:</p>
+
+<ul>
+<li><strong>Comprimento craniano:</strong> Aproximadamente 140-160 mm</li>
+<li><strong>Rostro:</strong> Relativamente curto e robusto, indicando forte musculatura mastigatória</li>
+<li><strong>Carnassiais:</strong> Bem desenvolvidos, adaptados para cortar carne</li>
+<li><strong>Molares:</strong> Reduzidos em comparação com canídeos onívoros, consistente com dieta carnívora</li>
+</ul>
+
+<h3>2.3. Esqueleto Pós-craniano</h3>
+<p>Os ossos longos sugerem um animal adaptado para corrida em terrenos abertos, com membros proporcionalmente longos e estrutura corporal relativamente leve. A morfologia dos membros é consistente com um predador cursorial das planícies.</p>
+
+<h2 id="distribuicao">3. Distribuição Geográfica e Habitat</h2>
+
+<p><em>Dusicyon avus</em> habitava as planícies abertas da América do Sul, com registros fósseis concentrados nas seguintes regiões:</p>
+
+<ul>
+<li><strong>Pampas Argentinos</strong> - Províncias de Buenos Aires, Santa Fe e Córdoba</li>
+<li><strong>Patagônia</strong> - Regiões do sul da Argentina</li>
+<li><strong>Uruguai</strong> - Registros ocasionais</li>
+</ul>
+
+<!-- Mapa de Distribuição -->
+<div id="distribution-map-container">
+    <h3>🗺️ Mapa de Distribuição Histórica</h3>
+    <div id="distribution-map"></div>
+</div>
+
+<h3>3.1. Habitat Preferencial</h3>
+<p>A espécie ocupava principalmente ambientes de pradarias e estepes, adaptada a climas temperados a frios. A presença em depósitos do Pleistoceno Tardio e Holoceno sugere tolerância a variações climáticas significativas.</p>
+
+<h2 id="genetica">4. Genética e Filogenia</h2>
+
+<h3>4.1. Relação com o Lobo-das-Malvinas</h3>
+<p>Análises de DNA antigo revelaram que <em>Dusicyon avus</em> é o parente continental mais próximo de <em>Dusicyon australis</em>, o extinto lobo-das-malvinas. A divergência entre as duas espécies ocorreu há aproximadamente 16.000 anos, durante o último máximo glacial.</p>
+
+<h3>4.2. Diversidade Genética</h3>
+<p>Estudos genômicos indicam que <em>D. avus</em> apresentava baixa diversidade genética em comparação com outros canídeos, o que pode ter contribuído para sua vulnerabilidade à extinção. Esta baixa diversidade sugere populações relativamente pequenas ou eventos de gargalo populacional no passado.</p>
+
+<h3>4.3. Posição Filogenética</h3>
+<p>Filogeneticamente, o gênero <em>Dusicyon</em> representa uma linhagem basal dentro dos canídeos sul-americanos, divergindo cedo na radiação evolutiva dos canídeos do continente.</p>
+
+<h2 id="humanos">5. Relação com Humanos</h2>
+
+<h3>5.1. Evidências Arqueológicas</h3>
+<p>O registro arqueológico fornece evidências fascinantes de interação entre <em>D. avus</em> e populações humanas pré-colombianas. O caso mais notável é o sepultamento em Cañada Seca (Argentina), onde um espécime de <em>D. avus</em> foi enterrado junto a um humano, sugerindo uma relação especial.</p>
+
+<h3>5.2. Possível Domesticação</h3>
+<p>Embora não haja evidências conclusivas de domesticação completa, a associação próxima com humanos em contextos arqueológicos sugere pelo menos comensalismo ou domesticação incipiente. Alguns pesquisadores propõem que <em>D. avus</em> pode ter ocupado um nicho ecológico similar ao dos cães em algumas comunidades indígenas.</p>
+
+<h3>5.3. Utilização por Humanos</h3>
+<p>Marcas de corte em alguns ossos fósseis indicam que a espécie era ocasionalmente caçada ou utilizada como recurso alimentar por populações humanas. No entanto, a frequência relativamente baixa dessas marcas sugere que não era uma presa primária.</p>
+
+<h2 id="extincao">6. Extinção</h2>
+
+<h3>6.1. Cronologia</h3>
+<p>A extinção de <em>Dusicyon avus</em> ocorreu no Holoceno Tardio, com datações radiocarbônicas indicando que a espécie sobreviveu até aproximadamente 326-496 anos antes do presente. Isto significa que a espécie coexistiu com humanos por milhares de anos antes de sua extinção final.</p>
+
+<h3>6.2. Causas Prováveis</h3>
+<p>As causas da extinção de <em>D. avus</em> são multifatoriais e ainda debatidas:</p>
+
+<ul>
+<li><strong>Mudanças climáticas:</strong> A transição do Pleistoceno para o Holoceno trouxe mudanças significativas nos ecossistemas das planícies sul-americanas.</li>
+<li><strong>Competição:</strong> A chegada de outros predadores, incluindo cães domésticos, pode ter intensificado a competição por recursos.</li>
+<li><strong>Pressão de caça:</strong> Embora não pareça ter sido a causa primária, a caça por humanos pode ter contribuído para o declínio populacional.</li>
+<li><strong>Baixa diversidade genética:</strong> A reduzida variabilidade genética pode ter limitado a capacidade de adaptação a mudanças ambientais.</li>
+<li><strong>Doenças:</strong> Patógenos introduzidos por cães domésticos podem ter afetado populações já vulneráveis.</li>
+</ul>
+
+<h3>6.3. Contexto Regional</h3>
+<p>A extinção de <em>D. avus</em> faz parte de uma onda mais ampla de extinções de megafauna sul-americana no final do Pleistoceno e início do Holoceno. No entanto, sua extinção relativamente tardia (comparada a outros grandes mamíferos) sugere que fatores específicos além das mudanças climáticas do Pleistoceno-Holoceno foram importantes.</p>
+
+<h2 id="especimes">7. Espécimes e Coleções</h2>
+
+<h3>7.1. Holótipo</h3>
+<p>O holótipo de <em>Dusicyon avus</em>, descrito por Burmeister em 1866, consiste em um crânio quase completo proveniente da Província de Buenos Aires, Argentina. Este espécime está depositado no Museo Argentino de Ciencias Naturales "Bernardino Rivadavia" (MACN).</p>
+
+<h3>7.3. Principais Coleções</h3>
+<p>Espécimes de <em>D. avus</em> estão depositados em diversas instituições:</p>
+
+<ul>
+<li><strong>MACN</strong> - Museo Argentino de Ciencias Naturales, Buenos Aires</li>
+<li><strong>MLP</strong> - Museo de La Plata, Argentina</li>
+<li><strong>MNHN</strong> - Muséum National d'Histoire Naturelle, Paris</li>
+<li><strong>AMNH</strong> - American Museum of Natural History, Nova York</li>
+</ul>
+
+<h2 id="referencias">8. Referências Bibliográficas</h2>
+
+<ol>
+<li>Burmeister, H. (1866). "Lista de los mamíferos fósiles del terreno diluviano". <em>Anales del Museo Público de Buenos Aires</em>, 1: 121-232.</li>
+<li>Prevosti, F.J. & Pardiñas, U.F.J. (2001). "Variaciones corológicas de <em>Lycalopex gymnocercus</em> y <em>Dusicyon avus</em> durante el Holoceno en las regiones Pampeana y Patagónica". <em>Mastozoología Neotropical</em>, 8(1): 21-39.</li>
+<li>Slater, G.J. et al. (2009). "Evolutionary relationships among extinct and extant sloths". <em>Proceedings of the Royal Society B</em>, 276: 2637-2645.</li>
+<li>Austin, J.J. et al. (2013). "The origins of the enigmatic Falkland Islands wolf". <em>Nature Communications</em>, 4: 2570.</li>
+<li>Prevosti, F.J. et al. (2015). "Extinctions in near time: new radiocarbon dates point to a very recent disappearance of the South American fox <em>Dusicyon avus</em>". <em>Biological Journal of the Linnean Society</em>, 116(3): 704-720.</li>
+</ol>
+
+</article>
+
+<!-- Botões de Ação -->
+{% if user.is_authenticated %}
+<div class="action-buttons">
+    <form method="post" action="{% url 'mammals:toggle_favorite' mammal.pk %}" style="display: inline;">
+        {% csrf_token %}
+        <button type="submit" class="btn-favorite {% if is_favorite %}active{% endif %}">
+            {% if is_favorite %}⭐ Remover dos Favoritos{% else %}☆ Adicionar aos Favoritos{% endif %}
+        </button>
+    </form>
+</div>
+{% endif %}
+
+<!-- Seção de Comentários -->
+<div class="comments-section" id="comentarios">
+    <h3>💬 Comentários ({{ comments|length }})</h3>
+
+    {% if user.is_authenticated %}
+    <form method="post" action="{% url 'mammals:add_comment' mammal.pk %}" class="comment-form">
+        {% csrf_token %}
+        <textarea name="content" placeholder="Escreva seu comentário..." required></textarea>
+        <button type="submit" class="btn-primary">Enviar Comentário</button>
+    </form>
+    {% else %}
+    <p><a href="{% url 'accounts:login' %}">Faça login</a> para comentar.</p>
+    {% endif %}
+
+    {% if comments %}
+    <div class="comments-list">
+        {% for comment in comments %}
+        <div class="comment">
+            <div class="comment-header">
+                <span class="comment-author">{{ comment.user.username }}</span>
+                <span class="comment-date">{{ comment.created_at|date:"d/m/Y H:i" }}</span>
+            </div>
+            <div class="comment-content">
+                {{ comment.content }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>Nenhum comentário ainda. Seja o primeiro a comentar!</p>
+    {% endif %}
+</div>
+
+<!-- Modal para Imagens -->
+<div id="imageModal" class="image-modal" onclick="closeImageModal()">
+    <span class="close">&times;</span>
+    <img id="modalImage" src="" alt="Imagem ampliada">
+</div>
+
+<script>
+// Função para abrir modal de imagem
+function openImageModal(src) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    modal.style.display = 'block';
+    modalImg.src = src;
+}
+
+// Função para fechar modal
+function closeImageModal() {
+    document.getElementById('imageModal').style.display = 'none';
+}
+
+// Smooth scroll para navegação
+document.querySelectorAll('.dossier-nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+</script>
+
+<!-- Leaflet para Mapa -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Dados de coordenadas do JSON
+    const coordinates = [
+        { location: "Pampas - Buenos Aires (Argentina)", lat: -34.6037, lon: -58.3816 },
+        { location: "Pampas - Santa Fe (Argentina)", lat: -31.6333, lon: -60.7 },
+        { location: "Pampas - Córdoba (Argentina)", lat: -31.4201, lon: -64.1888 }
+    ];
+
+    if (coordinates.length > 0) {
+        // Calcular centro
+        const avgLat = coordinates.reduce((sum, c) => sum + c.lat, 0) / coordinates.length;
+        const avgLon = coordinates.reduce((sum, c) => sum + c.lon, 0) / coordinates.length;
+
+        // Criar mapa
+        const map = L.map('distribution-map').setView([avgLat, avgLon], 6);
+
+        // Adicionar camada de tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Adicionar marcadores
+        coordinates.forEach(coord => {
+            L.marker([coord.lat, coord.lon])
+                .addTo(map)
+                .bindPopup(`<b>${coord.location}</b>`);
+        });
+
+        // Ajustar zoom para mostrar todos os marcadores
+        const bounds = L.latLngBounds(coordinates.map(c => [c.lat, c.lon]));
+        map.fitBounds(bounds, { padding: [50, 50] });
+    }
+});
+</script>
+
+{% endblock %}
