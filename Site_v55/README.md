@@ -39,11 +39,11 @@ Catálogo digital interativo de **85 mamíferos extintos desde 1500**, desenvolv
 *Catálogo completo com 85 espécies, busca e filtros por região e taxonomia*
 
 ### Mapa Global Interativo
-![Mapa Global](static/images/screenshots/global_map.png)
+![Mapa Global](static/images/screenshots/global_map.webp)
 *Visualização de 77 localizações únicas com clustering inteligente e heatmap*
 
 ### Página de Detalhes com Mapa Individual
-![Detalhes](static/images/screenshots/detail_map.png)
+![Detalhes](static/images/screenshots/detail_map.webp)
 *Informações completas da espécie com mapa de distribuição histórica via Nominatim API*
 
 ---
