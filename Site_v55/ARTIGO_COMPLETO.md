@@ -769,9 +769,3 @@ TIME_ZONE=America/Sao_Paulo
 Este projeto é disponibilizado sob licença MIT, permitindo uso, cópia, modificação e distribuição livre, desde que mantidos os créditos originais.
 
 ---
-
-**Documento gerado em**: Novembro de 2025  
-**Versão do documento**: 1.0  
-**Status**: Final  
-**Total de páginas**: Aproximadamente 15 páginas A4  
-**Total de palavras**: Aproximadamente 5.500 palavras
