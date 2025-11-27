@@ -34,11 +34,18 @@ Catálogo digital interativo de **85 mamíferos extintos desde 1500**, desenvolv
 
 ## 📸 Screenshots
 
+### Homepage - Catálogo de Espécies
 ![Homepage](https://raw.githubusercontent.com/Ilay-ap/Cat-logo-Digital-de-Mam-feros-Extintos-desde-1500/main/Site_v55/static/images/screenshots/homepage.webp )
+*Catálogo completo com 85 espécies, busca e filtros por região e taxonomia*
+
+### Mapa Global Interativo
 ![Mapa Global](https://raw.githubusercontent.com/Ilay-ap/Cat-logo-Digital-de-Mam-feros-Extintos-desde-1500/main/Site_v55/static/images/screenshots/global_map.webp )
+*Visualização de 77 localizações únicas com clustering inteligente e heatmap*
+
+### Página de Detalhes com Mapa Individual
+
 ![Detalhes](https://raw.githubusercontent.com/Ilay-ap/Cat-logo-Digital-de-Mam-feros-Extintos-desde-1500/main/Site_v55/static/images/screenshots/detail_map.webp )
-
-
+*Informações completas da espécie com mapa de distribuição histórica via Nominatim API*
 ---
 
 ## 🚀 Acesso Rápido
